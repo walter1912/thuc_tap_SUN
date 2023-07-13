@@ -4,6 +4,8 @@ body {
   width: 100vw;
   font-family: "IBM Plex Sans", sans-serif;
   font-family: "Roboto", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
 }
 :root {
   --header__height: 32px;
@@ -13,8 +15,9 @@ body {
     width: 100%;
     padding: 6px 10px;
 }
-.container__section {
+.container__section, .container__section--children {
     margin:0;
+    padding: 8px 10px;
 }
 
 .trailer {
@@ -29,4 +32,34 @@ body {
 }
 .trailer__up-next {
     width: calc(100% - 838px);
+}
+.container__section--children h4.title {
+    font-weight: 400;
+    color:var(--white-second);
+}
+/* title của section children */
+.section--children__title {
+    font-size: 24px;
+    cursor: pointer;
+
+}
+.section--children__title .title {
+    text-transform: capitalize;
+    padding-left: 8px;
+}
+.section--children__title .hr {
+    border: 2px solid var(--color-main);
+    border-radius: 2px;
+}
+.section--children__title:hover .icon {
+    color: var(--color-main);   
+}
+
+
+.top-picks .watch-now {
+    display: none;
+  }
+
+.top10 .infor-more, .top10 .watch-now {
+    display: none;
 }

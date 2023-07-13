@@ -7,7 +7,7 @@
 <!-- link font chữ -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- icon font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <!-- link style -->
@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/trailer.css">
-
+    <link rel="stylesheet" href="./assets/css/featured_today.css">
+    <link rel="stylesheet" href="./assets/css/top_picks.css">
 
 
 </head>
@@ -32,7 +33,7 @@
             <input type="search" name="searchAll" id="searchAll" 
             placeholder="Search IMBb"
             >
-            <button class="form-search__type btn">
+            <button class="form-search__type btn" style="color:var(--black-second)">
                 All
             </button>
             <button type="submit" class="form-search__submit btn">
@@ -66,20 +67,22 @@
         <!-- section trailer -->
         <section class="trailer container__section">
             <div class="trailer__slider">
-                <img 
-                id="trailer__slider__img--current"
-                class="trailer__slider__img"
-                src="https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX500_CR0,0,500,281_.jpg" 
-                srcset="https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX500_CR0,0,500,281_.jpg 500w, https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX750_CR0,0,750,422_.jpg 750w, https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX1000_CR0,0,1000,563_.jpg 1000w"
-                alt="5 Things to Watch on Netflix" srcset="">
                 <div class="trailer__slider__control flex-row-center">
                     <button class="btn btn--outlined">
                         <i class="fa-solid fa-chevron-left"></i>
                     </button>
                     <button class="btn btn--outlined">
                         <i class="fa-solid fa-chevron-right"></i>
+
                     </button>
                 </div>
+                <img 
+                id="trailer__slider__img--current"
+                class="trailer__slider__img"
+                src="https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX500_CR0,0,500,281_.jpg" 
+                srcset="https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX500_CR0,0,500,281_.jpg 500w, https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX750_CR0,0,750,422_.jpg 750w, https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX1000_CR0,0,1000,563_.jpg 1000w"
+                alt="5 Things to Watch on Netflix" srcset="">
+               
                 <div class="trailer__slider__des">
                     <div class="poster" style="width: 132px; height: 196px;">
                         <img 
@@ -189,84 +192,714 @@
             <h1 class="section__title">
                 fetured today 
             </h1>
-            <div class="featured__slider slider--3">
-               <div class="featured__slider__item">slider 1</div>
-               <div class="featured__slider__item">slider 2</div>
-               <div class="featured__slider__item">slider 3</div>
+            <div class="trailer__slider slider--2" style="height:312px;">
+                <div class="trailer__slider__control flex-row-center">
+                    <button class="btn btn--outlined">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="btn btn--outlined">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="featured__list flex-row-center">
+                    <div class="featured__item flex-column-center">
+                        <div class="featured__item__img">
+                            <img alt="Production art" class="ipc-image" loading="lazy" src="https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg 380w, https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX570_CR0,0,570,321_.jpg 570w, https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX760_CR0,0,760,428_.jpg 760w" sizes="100vw, (min-width: 480px) 68vw, (min-width: 600px) 52vw, (min-width: 1024px) 32vw, (min-width: 1280px) 32vw" width="380">
+                            <div class="img__des">
+                                <i class="fa-solid fa-list"></i>
+                                <span>List</span>
+                            </div>
+                        </div>
+                        <a class="featured__item__title color-white " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_ft_lst_csegmybo_epi_3_t" target="_blank" rel="noopener noreferrer">
+                            10 Top-Rated Episodes From 2023's Best Series
+                        </a>
+                        <a class="featured__item__bonus color-blue " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_c_ft_lst_csegmybo_epi_3_cta" target="_blank" rel="noopener noreferrer">
+                            See the list
+                        </a>
+                    </div>
+                    <div class="featured__item flex-column-center">
+                        <div class="featured__item__img">
+                            <img alt="Production art" class="ipc-image" loading="lazy" src="https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg 380w, https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX570_CR0,0,570,321_.jpg 570w, https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX760_CR0,0,760,428_.jpg 760w" sizes="100vw, (min-width: 480px) 68vw, (min-width: 600px) 52vw, (min-width: 1024px) 32vw, (min-width: 1280px) 32vw" width="380">
+                            <div class="img__des">
+                                <i class="fa-solid fa-list"></i>
+                                <span>List</span>
+                            </div>
+                        </div>
+                        <a class="featured__item__title color-white " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_ft_lst_csegmybo_epi_3_t" target="_blank" rel="noopener noreferrer">
+                            10 Top-Rated Episodes From 2023's Best Series
+                        </a>
+                        <a class="featured__item__bonus color-blue " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_c_ft_lst_csegmybo_epi_3_cta" target="_blank" rel="noopener noreferrer">
+                            See the list
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="container__section what-to-watch">
-            <h1 class="section__title">what to watch</h1>
+            <div class="flex-row-center" style="justify-content: space-between;">
+                <span class="section__title">what to watch</span>
+                <button class="btn color-blue btn__txt" style="padding: 6px 14px;">
+                    <span>Get more recommendations </span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
             <section class="container__section--children top-picks">
                 <h2 class="section--children__title">
+                    <span class="hr"></span>
                     <span class="title">top picks</span>
-                    <span class="icon"></span>
+                    <span class="icon">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </span>
                 </h2>
                 <h4 class="title">tv shows and movies just for you</h4>
-                <div class="top-picks__slider slider--6">
-                    <div class="top-picks__slider__item">top pick slider item 1</div>
-                    <div class="top-picks__slider__item">top pick slider item 2</div>
-                    <div class="top-picks__slider__item">top pick slider item 3</div>
-                    <div class="top-picks__slider__item">top pick slider item 4</div>
-                    <div class="top-picks__slider__item">top pick slider item 5</div>
-                    <div class="top-picks__slider__item">top pick slider item 6</div>
+                <div class="trailer__slider top-picks__slider slider--6" style=" height: fit-content; width: 100%;">
+                    <div class="trailer__slider__control flex-row-center">
+                        <button class="btn btn--outlined">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="btn btn--outlined">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="top-picks__slider__item poster-card">
+                        <div class="poster" style="width: 186px; height: 272px;">
+                            <img 
+                            alt="Chú Thuật Hồi Chiến" 
+                            class="poster__img" 
+                            id="trailer__slider__poster--current" 
+                            loading="lazy" 
+                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                            
+                            <div class="poster__bookmark--add">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="poster-card__content color-white">
+                            <div class="rating flex-row-center" style="padding-left: 8px;">
+                                <i class="fa-solid fa-star color-main"></i>
+                                <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
+                               <button class="btn btn__icon">
+                                   <i class="fa-regular fa-star color-blue"></i>
+                               </button>
+                            </div>
+                            <div class="flex-column-center" style="padding: 8px;">
+                                <p class="title">
+                                    Chú Thuật Hồi Chiến
+                                </p>
+                                <button class="btn btn__txt color-blue">
+                                    <span class="watch-now">
+                                        <span>Watch now</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </span>
+                                    <span class="watch-list">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Watchlist</span>
+                                    </span>
+                                </button>
+                                <div class="flex-row-center" style="margin-top: 10px;">
+                                    <button class="btn btn__txt color-white">
+                                        <i class="fa-solid fa-play"></i>
+                                        <span>Trailer</span>
+                                    </button>
+                                    <button class="btn btn__icon color-white infor-more">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-picks__slider__item poster-card">
+                        <div class="poster" style="width: 186px; height: 272px;">
+                            <img 
+                            alt="Chú Thuật Hồi Chiến" 
+                            class="poster__img" 
+                            id="trailer__slider__poster--current" 
+                            loading="lazy" 
+                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                            
+                            <div class="poster__bookmark--add">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="poster-card__content color-white">
+                            <div class="rating flex-row-center" style="padding-left: 8px;">
+                                <i class="fa-solid fa-star color-main"></i>
+                                <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
+                               <button class="btn btn__icon">
+                                   <i class="fa-regular fa-star color-blue"></i>
+                               </button>
+                            </div>
+                            <div class="flex-column-center" style="padding: 8px;">
+                                <p class="title">
+                                    Chú Thuật Hồi Chiến
+                                </p>
+                                <button class="btn btn__txt color-blue">
+                                    <span class="watch-now">
+                                        <span>Watch now</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </span>
+                                    <span class="watch-list">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Watchlist</span>
+                                    </span>
+                                </button>
+                                <div class="flex-row-center" style="margin-top: 10px;">
+                                    <button class="btn btn__txt color-white">
+                                        <i class="fa-solid fa-play"></i>
+                                        <span>Trailer</span>
+                                    </button>
+                                    <button class="btn btn__icon color-white infor-more">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-picks__slider__item poster-card">
+                        <div class="poster" style="width: 186px; height: 272px;">
+                            <img 
+                            alt="Chú Thuật Hồi Chiến" 
+                            class="poster__img" 
+                            id="trailer__slider__poster--current" 
+                            loading="lazy" 
+                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                            
+                            <div class="poster__bookmark--add">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="poster-card__content color-white">
+                            <div class="rating flex-row-center" style="padding-left: 8px;">
+                                <i class="fa-solid fa-star color-main"></i>
+                                <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
+                               <button class="btn btn__icon">
+                                   <i class="fa-regular fa-star color-blue"></i>
+                               </button>
+                            </div>
+                            <div class="flex-column-center" style="padding: 8px;">
+                                <p class="title">
+                                    Chú Thuật Hồi Chiến
+                                </p>
+                                <button class="btn btn__txt color-blue">
+                                    <span class="watch-now">
+                                        <span>Watch now</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </span>
+                                    <span class="watch-list">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Watchlist</span>
+                                    </span>
+                                </button>
+                                <div class="flex-row-center" style="margin-top: 10px;">
+                                    <button class="btn btn__txt color-white">
+                                        <i class="fa-solid fa-play"></i>
+                                        <span>Trailer</span>
+                                    </button>
+                                    <button class="btn btn__icon color-white infor-more">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-picks__slider__item poster-card">
+                        <div class="poster" style="width: 186px; height: 272px;">
+                            <img 
+                            alt="Chú Thuật Hồi Chiến" 
+                            class="poster__img" 
+                            id="trailer__slider__poster--current" 
+                            loading="lazy" 
+                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                            
+                            <div class="poster__bookmark--add">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="poster-card__content color-white">
+                            <div class="rating flex-row-center" style="padding-left: 8px;">
+                                <i class="fa-solid fa-star color-main"></i>
+                                <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
+                               <button class="btn btn__icon">
+                                   <i class="fa-regular fa-star color-blue"></i>
+                               </button>
+                            </div>
+                            <div class="flex-column-center" style="padding: 8px;">
+                                <p class="title">
+                                    Chú Thuật Hồi Chiến
+                                </p>
+                                <button class="btn btn__txt color-blue">
+                                    <span class="watch-now">
+                                        <span>Watch now</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </span>
+                                    <span class="watch-list">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Watchlist</span>
+                                    </span>
+                                </button>
+                                <div class="flex-row-center" style="margin-top: 10px;">
+                                    <button class="btn btn__txt color-white">
+                                        <i class="fa-solid fa-play"></i>
+                                        <span>Trailer</span>
+                                    </button>
+                                    <button class="btn btn__icon color-white infor-more">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-picks__slider__item poster-card">
+                        <div class="poster" style="width: 186px; height: 272px;">
+                            <img 
+                            alt="Chú Thuật Hồi Chiến" 
+                            class="poster__img" 
+                            id="trailer__slider__poster--current" 
+                            loading="lazy" 
+                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                            
+                            <div class="poster__bookmark--add">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="poster-card__content color-white">
+                            <div class="rating flex-row-center" style="padding-left: 8px;">
+                                <i class="fa-solid fa-star color-main"></i>
+                                <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
+                               <button class="btn btn__icon">
+                                   <i class="fa-regular fa-star color-blue"></i>
+                               </button>
+                            </div>
+                            <div class="flex-column-center" style="padding: 8px;">
+                                <p class="title">
+                                    Chú Thuật Hồi Chiến
+                                </p>
+                                <button class="btn btn__txt color-blue">
+                                    <span class="watch-now">
+                                        <span>Watch now</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </span>
+                                    <span class="watch-list">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Watchlist</span>
+                                    </span>
+                                </button>
+                                <div class="flex-row-center" style="margin-top: 10px;">
+                                    <button class="btn btn__txt color-white">
+                                        <i class="fa-solid fa-play"></i>
+                                        <span>Trailer</span>
+                                    </button>
+                                    <button class="btn btn__icon color-white infor-more">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-picks__slider__item poster-card">
+                        <div class="poster" style="width: 186px; height: 272px;">
+                            <img 
+                            alt="Chú Thuật Hồi Chiến" 
+                            class="poster__img" 
+                            id="trailer__slider__poster--current" 
+                            loading="lazy" 
+                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                            
+                            <div class="poster__bookmark--add">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="poster-card__content color-white">
+                            <div class="rating flex-row-center" style="padding-left: 8px;">
+                                <i class="fa-solid fa-star color-main"></i>
+                                <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
+                               <button class="btn btn__icon">
+                                   <i class="fa-regular fa-star color-blue"></i>
+                               </button>
+                            </div>
+                            <div class="flex-column-center" style="padding: 8px;">
+                                <p class="title">
+                                    Chú Thuật Hồi Chiến
+                                </p>
+                                <button class="btn btn__txt color-blue">
+                                    <span class="watch-now">
+                                        <span>Watch now</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </span>
+                                    <span class="watch-list">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Watchlist</span>
+                                    </span>
+                                </button>
+                                <div class="flex-row-center" style="margin-top: 10px;">
+                                    <button class="btn btn__txt color-white">
+                                        <i class="fa-solid fa-play"></i>
+                                        <span>Trailer</span>
+                                    </button>
+                                    <button class="btn btn__icon color-white infor-more">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
                 </div>
+              
             </section>
             <section class="container__section--children watchlist">
+               
                 <h2 class="section--children__title">
-                    <span class="title">
-                        From your Watchlist
+                    <span class="hr"></span>
+                    <span class="title"> From your Watchlist</span>
+                    <span class="icon">
+                        <i class="fa-solid fa-chevron-right"></i>
                     </span>
-                    <span class="icon"></span>
                 </h2>
                 <h4 class="title">
                     Movies and TV shows that you have watchlisted
                 </h4>
-                <div class="watchlist__slider slider--6">
-                    <div class="watchlist__slider__item">watchlist slider item 1</div>
-                    <div class="watchlist__slider__item">watchlist slider item 2</div>
-                    <div class="watchlist__slider__item">watchlist slider item 3</div>
-                    <div class="watchlist__slider__item">watchlist slider item 4</div>
-                    <div class="watchlist__slider__item">watchlist slider item 5</div>
-                    <div class="watchlist__slider__item">watchlist slider item 6</div>
-                </div>
+                
             </section>
             <section class="container__section--children top10">
+                
                 <h2 class="section--children__title">
-                    <span class="title">
-                        Top 10 on IMDb this week
-                    </span>
+                    <span class="hr"></span>
+                    <span class="title"> Top 10 on IMDb this week</span>
+                  
                 </h2>
-                <div class="top10__slider slider--6">
-                    <div class="top10__slider__item">top10 slider item 1</div>
-                    <div class="top10__slider__item">top10 slider item 2</div>
-                    <div class="top10__slider__item">top10 slider item 3</div>
-                    <div class="top10__slider__item">top10 slider item 4</div>
-                    <div class="top10__slider__item">top10 slider item 5</div>
-                    <div class="top10__slider__item">top10 slider item 6</div>
+                <div class="trailer__slider top-picks__slider slider--6" style=" height: fit-content; width: 100%;">
+                    <div class="trailer__slider__control flex-row-center">
+                        <button class="btn btn--outlined">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="btn btn--outlined">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="top-picks__slider__item poster-card">
+                        <div class="poster" style="width: 186px; height: 272px;">
+                            <img 
+                            alt="Chú Thuật Hồi Chiến" 
+                            class="poster__img" 
+                            id="trailer__slider__poster--current" 
+                            loading="lazy" 
+                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                            
+                            <div class="poster__bookmark--add">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="poster-card__content color-white">
+                            <div class="rating flex-row-center" style="padding-left: 8px;">
+                                <i class="fa-solid fa-star color-main"></i>
+                                <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
+                               <button class="btn btn__icon">
+                                   <i class="fa-regular fa-star color-blue"></i>
+                               </button>
+                            </div>
+                            <div class="flex-column-center" style="padding: 8px;">
+                                <p class="title">
+                                    Chú Thuật Hồi Chiến
+                                </p>
+                                <button class="btn btn__txt color-blue">
+                                    <span class="watch-now">
+                                        <span>Watch now</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </span>
+                                    <span class="watch-list">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Watchlist</span>
+                                    </span>
+                                </button>
+                                <div class="flex-row-center" style="margin-top: 10px;">
+                                    <button class="btn btn__txt color-white">
+                                        <i class="fa-solid fa-play"></i>
+                                        <span>Trailer</span>
+                                    </button>
+                                    <button class="btn btn__icon color-white infor-more">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-picks__slider__item poster-card">
+                        <div class="poster" style="width: 186px; height: 272px;">
+                            <img 
+                            alt="Chú Thuật Hồi Chiến" 
+                            class="poster__img" 
+                            id="trailer__slider__poster--current" 
+                            loading="lazy" 
+                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                            
+                            <div class="poster__bookmark--add">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="poster-card__content color-white">
+                            <div class="rating flex-row-center" style="padding-left: 8px;">
+                                <i class="fa-solid fa-star color-main"></i>
+                                <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
+                               <button class="btn btn__icon">
+                                   <i class="fa-regular fa-star color-blue"></i>
+                               </button>
+                            </div>
+                            <div class="flex-column-center" style="padding: 8px;">
+                                <p class="title">
+                                    Chú Thuật Hồi Chiến
+                                </p>
+                                <button class="btn btn__txt color-blue">
+                                    <span class="watch-now">
+                                        <span>Watch now</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </span>
+                                    <span class="watch-list">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Watchlist</span>
+                                    </span>
+                                </button>
+                                <div class="flex-row-center" style="margin-top: 10px;">
+                                    <button class="btn btn__txt color-white">
+                                        <i class="fa-solid fa-play"></i>
+                                        <span>Trailer</span>
+                                    </button>
+                                    <button class="btn btn__icon color-white infor-more">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-picks__slider__item poster-card">
+                        <div class="poster" style="width: 186px; height: 272px;">
+                            <img 
+                            alt="Chú Thuật Hồi Chiến" 
+                            class="poster__img" 
+                            id="trailer__slider__poster--current" 
+                            loading="lazy" 
+                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                            
+                            <div class="poster__bookmark--add">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="poster-card__content color-white">
+                            <div class="rating flex-row-center" style="padding-left: 8px;">
+                                <i class="fa-solid fa-star color-main"></i>
+                                <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
+                               <button class="btn btn__icon">
+                                   <i class="fa-regular fa-star color-blue"></i>
+                               </button>
+                            </div>
+                            <div class="flex-column-center" style="padding: 8px;">
+                                <p class="title">
+                                    Chú Thuật Hồi Chiến
+                                </p>
+                                <button class="btn btn__txt color-blue">
+                                    <span class="watch-now">
+                                        <span>Watch now</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </span>
+                                    <span class="watch-list">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Watchlist</span>
+                                    </span>
+                                </button>
+                                <div class="flex-row-center" style="margin-top: 10px;">
+                                    <button class="btn btn__txt color-white">
+                                        <i class="fa-solid fa-play"></i>
+                                        <span>Trailer</span>
+                                    </button>
+                                    <button class="btn btn__icon color-white infor-more">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-picks__slider__item poster-card">
+                        <div class="poster" style="width: 186px; height: 272px;">
+                            <img 
+                            alt="Chú Thuật Hồi Chiến" 
+                            class="poster__img" 
+                            id="trailer__slider__poster--current" 
+                            loading="lazy" 
+                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                            
+                            <div class="poster__bookmark--add">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="poster-card__content color-white">
+                            <div class="rating flex-row-center" style="padding-left: 8px;">
+                                <i class="fa-solid fa-star color-main"></i>
+                                <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
+                               <button class="btn btn__icon">
+                                   <i class="fa-regular fa-star color-blue"></i>
+                               </button>
+                            </div>
+                            <div class="flex-column-center" style="padding: 8px;">
+                                <p class="title">
+                                    Chú Thuật Hồi Chiến
+                                </p>
+                                <button class="btn btn__txt color-blue">
+                                    <span class="watch-now">
+                                        <span>Watch now</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </span>
+                                    <span class="watch-list">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Watchlist</span>
+                                    </span>
+                                </button>
+                                <div class="flex-row-center" style="margin-top: 10px;">
+                                    <button class="btn btn__txt color-white">
+                                        <i class="fa-solid fa-play"></i>
+                                        <span>Trailer</span>
+                                    </button>
+                                    <button class="btn btn__icon color-white infor-more">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-picks__slider__item poster-card">
+                        <div class="poster" style="width: 186px; height: 272px;">
+                            <img 
+                            alt="Chú Thuật Hồi Chiến" 
+                            class="poster__img" 
+                            id="trailer__slider__poster--current" 
+                            loading="lazy" 
+                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                            
+                            <div class="poster__bookmark--add">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="poster-card__content color-white">
+                            <div class="rating flex-row-center" style="padding-left: 8px;">
+                                <i class="fa-solid fa-star color-main"></i>
+                                <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
+                               <button class="btn btn__icon">
+                                   <i class="fa-regular fa-star color-blue"></i>
+                               </button>
+                            </div>
+                            <div class="flex-column-center" style="padding: 8px;">
+                                <p class="title">
+                                    Chú Thuật Hồi Chiến
+                                </p>
+                                <button class="btn btn__txt color-blue">
+                                    <span class="watch-now">
+                                        <span>Watch now</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </span>
+                                    <span class="watch-list">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Watchlist</span>
+                                    </span>
+                                </button>
+                                <div class="flex-row-center" style="margin-top: 10px;">
+                                    <button class="btn btn__txt color-white">
+                                        <i class="fa-solid fa-play"></i>
+                                        <span>Trailer</span>
+                                    </button>
+                                    <button class="btn btn__icon color-white infor-more">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-picks__slider__item poster-card">
+                        <div class="poster" style="width: 186px; height: 272px;">
+                            <img 
+                            alt="Chú Thuật Hồi Chiến" 
+                            class="poster__img" 
+                            id="trailer__slider__poster--current" 
+                            loading="lazy" 
+                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                            
+                            <div class="poster__bookmark--add">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="poster-card__content color-white">
+                            <div class="rating flex-row-center" style="padding-left: 8px;">
+                                <i class="fa-solid fa-star color-main"></i>
+                                <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
+                               <button class="btn btn__icon">
+                                   <i class="fa-regular fa-star color-blue"></i>
+                               </button>
+                            </div>
+                            <div class="flex-column-center" style="padding: 8px;">
+                                <p class="title">
+                                    Chú Thuật Hồi Chiến
+                                </p>
+                                <button class="btn btn__txt color-blue">
+                                    <span class="watch-now">
+                                        <span>Watch now</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </span>
+                                    <span class="watch-list">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Watchlist</span>
+                                    </span>
+                                </button>
+                                <div class="flex-row-center" style="margin-top: 10px;">
+                                    <button class="btn btn__txt color-white">
+                                        <i class="fa-solid fa-play"></i>
+                                        <span>Trailer</span>
+                                    </button>
+                                    <button class="btn btn__icon color-white infor-more">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
                 </div>
             </section>
             <section class="container__section--children favorites">
                 <h2 class="section--children__title">
+                    <span class="hr"></span>
                     <span class="title">
                         Fan favorites
                     </span>
-                    <span class="icon"></span>
+                    <span class="icon">
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </span>
                 </h2>
                 <h4 class="title">
                     This week's top TV and movies
                 </h4>
-                <div class="favorites__slider slider--6">
+                <!-- <div class="favorites__slider slider--6">
                     <div class="favorites__slider__item">favorites slider item 1</div>
                     <div class="favorites__slider__item">favorites slider item 2</div>
                     <div class="favorites__slider__item">favorites slider item 3</div>
                     <div class="favorites__slider__item">favorites slider item 4</div>
                     <div class="favorites__slider__item">favorites slider item 5</div>
                     <div class="favorites__slider__item">favorites slider item 6</div>
-                </div>
+                </div> -->
             </section>
             <section class="container__section--children">
                 <h2 class="section--children__title">
+                    <span class="hr"></span>
                     <span class="title">
                         more to watch 
                     </span>
@@ -274,18 +907,19 @@
                 <h4 class="title">
                     IMDb helps you select the perfect next show or movie to watch.
                 </h4>
-                <div class="more-to-watch__content">
-                    <button class="btn--outlined">watch guide</button>
-                    <button class="btn--outlined">most popular</button>
+                <div class="flex-row-center">
+                    <button class="btn btn--outlined btn__txt" style="margin-right: 2rem;">watch guide</button>
+                    <button class="btn btn--outlined btn__txt">most popular</button>
                 </div>
             </section>
         </section>
         <section class="container__section exclusive">
-            <h1 class="title">
+            <h1 class="section__title">
                 exclusive videos
             </h1>
             <section class="container__section--children">
                 <h2 class="section--children__title">
+                    <span class="hr"></span>
                     <span class="title">
                         iMDb Originals
                     </span>
@@ -293,6 +927,69 @@
                 <h4 class="title">
                     Celebrity interviews, trending entertainment stories, and expert analysis
                 </h4>
+                <div class="trailer__slider slider--2" style="height:312px; width: 100%;">
+                    <div class="trailer__slider__control flex-row-center">
+                        <button class="btn btn--outlined">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="btn btn--outlined">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="featured__list flex-row-center">
+                        <div class="featured__item flex-column-center">
+                            <div class="featured__item__img">
+                                <img alt="Our 5 Favorite Shows of 2023 (So Far)" class="ipc-image" loading="lazy" src="https://m.media-amazon.com/images/M/MV5BZDRkNjE0Y2ItNDJjMS00MzM3LWE0M2EtNWMyZmI2ZTY4YTZmXkEyXkFqcGdeQWplZmZscA@@._V1_QL75_UX380_CR0,0,380,214_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BZDRkNjE0Y2ItNDJjMS00MzM3LWE0M2EtNWMyZmI2ZTY4YTZmXkEyXkFqcGdeQWplZmZscA@@._V1_QL75_UX380_CR0,0,380,214_.jpg 380w, https://m.media-amazon.com/images/M/MV5BZDRkNjE0Y2ItNDJjMS00MzM3LWE0M2EtNWMyZmI2ZTY4YTZmXkEyXkFqcGdeQWplZmZscA@@._V1_QL75_UX570_CR0,0,570,321_.jpg 570w, https://m.media-amazon.com/images/M/MV5BZDRkNjE0Y2ItNDJjMS00MzM3LWE0M2EtNWMyZmI2ZTY4YTZmXkEyXkFqcGdeQWplZmZscA@@._V1_QL75_UX760_CR0,0,760,428_.jpg 760w" sizes="100vw, (min-width: 480px) 68vw, (min-width: 600px) 52vw, (min-width: 1024px) 32vw, (min-width: 1280px) 32vw" width="380">
+                                <div class="img__des">
+                                    <button class="btn btn--play" style="width: 28px; height: 28px; font-size: 14px; padding-left: 8px;">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <span>1:01</span>
+                                </div>
+                            </div>
+                            <a class="featured__item__title color-white " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_ft_lst_csegmybo_epi_3_t" target="_blank" rel="noopener noreferrer">
+                                Our 5 Favorite Shows of 2023 (So Far)
+                            </a>
+                            <a class="featured__item__bonus color-blue " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_c_ft_lst_csegmybo_epi_3_cta" target="_blank" rel="noopener noreferrer">
+                               Watch the video
+                            </a>
+                        </div>
+                        <div class="featured__item flex-column-center">
+                            <div class="featured__item__img">
+                                <img alt="&quot;The Summer I Turned Pretty&quot; Cast Answers Fan Questions" class="ipc-image" loading="lazy" src="https://m.media-amazon.com/images/M/MV5BYzU4ODA4ODYtM2Y1YS00NTU5LWFhN2UtMjlmZjcxYzdiOTFmXkEyXkFqcGdeQXNhcmFocmVi._V1_QL75_UX380_CR0,0,380,214_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BYzU4ODA4ODYtM2Y1YS00NTU5LWFhN2UtMjlmZjcxYzdiOTFmXkEyXkFqcGdeQXNhcmFocmVi._V1_QL75_UX380_CR0,0,380,214_.jpg 380w, https://m.media-amazon.com/images/M/MV5BYzU4ODA4ODYtM2Y1YS00NTU5LWFhN2UtMjlmZjcxYzdiOTFmXkEyXkFqcGdeQXNhcmFocmVi._V1_QL75_UX570_CR0,0,570,321_.jpg 570w, https://m.media-amazon.com/images/M/MV5BYzU4ODA4ODYtM2Y1YS00NTU5LWFhN2UtMjlmZjcxYzdiOTFmXkEyXkFqcGdeQXNhcmFocmVi._V1_QL75_UX760_CR0,0,760,428_.jpg 760w" sizes="100vw, (min-width: 480px) 68vw, (min-width: 600px) 52vw, (min-width: 1024px) 32vw, (min-width: 1280px) 32vw" width="380">
+                                <div class="img__des">
+                                    <button class="btn btn--play" style="width: 28px; height: 28px; font-size: 14px; padding-left: 8px;">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <span>1:01</span>
+                                </div>
+                            </div>
+                            <a class="featured__item__title color-white " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_ft_lst_csegmybo_epi_3_t" target="_blank" rel="noopener noreferrer">
+                                &quot;The Summer I Turned Pretty&quot; Cast Answers Fan Questions
+                            </a>
+                            <a class="featured__item__bonus color-blue " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_c_ft_lst_csegmybo_epi_3_cta" target="_blank" rel="noopener noreferrer">
+                               Watch the video
+                            </a>
+                        </div>
+                        <div class="featured__item flex-column-center">
+                            <div class="featured__item__img">
+                                <img alt="Production art" class="ipc-image" loading="lazy" src="https://m.media-amazon.com/images/M/MV5BNmJhMDMwMTMtYWU5YS00ODRhLThhMDQtYTYxNGM4YzdhYTI2XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BNmJhMDMwMTMtYWU5YS00ODRhLThhMDQtYTYxNGM4YzdhYTI2XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg 380w, https://m.media-amazon.com/images/M/MV5BNmJhMDMwMTMtYWU5YS00ODRhLThhMDQtYTYxNGM4YzdhYTI2XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX570_CR0,0,570,321_.jpg 570w, https://m.media-amazon.com/images/M/MV5BNmJhMDMwMTMtYWU5YS00ODRhLThhMDQtYTYxNGM4YzdhYTI2XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX760_CR0,0,760,428_.jpg 760w" sizes="100vw, (min-width: 480px) 68vw, (min-width: 600px) 52vw, (min-width: 1024px) 32vw, (min-width: 1280px) 32vw" width="380">
+                                <div class="img__des">
+                                    <button class="btn btn--play" style="width: 28px; height: 28px; font-size: 14px; padding-left: 8px;">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <span>1:01</span>
+                                </div>
+                            </div>
+                            <a class="featured__item__title color-white " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_ft_lst_csegmybo_epi_3_t" target="_blank" rel="noopener noreferrer">
+                                The 'Joy Ride' Cast Crack One Another Up
+                            </a>
+                            <a class="featured__item__bonus color-blue " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_c_ft_lst_csegmybo_epi_3_cta" target="_blank" rel="noopener noreferrer">
+                               Watch the video
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </section>
 

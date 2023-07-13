@@ -1,0 +1,30 @@
+.top-picks__slider {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0;
+}
+
+.poster-card {
+  background-color: var(--black-second);
+  /* border: 1px solid var(--color-main); */
+
+  margin: 10px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+}
+.top-picks__slider__item .btn__txt.color-blue {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: var(--black-third);
+}
+.top-picks__slider__item .btn__txt.color-blue:hover {
+    background-color: var(--color-hover);
+}
+
+.poster-card .title:hover {
+    text-decoration: underline;
+}
