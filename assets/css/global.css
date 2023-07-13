@@ -1,0 +1,83 @@
+/* reset css  */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-main: #f5c518;
+  --white: #fff;
+  --white-second: #adb3b3;
+  --black: #000000;
+  --black-second: #1a1a1a;
+  --color-hover: #2c2c2c;
+  --blue: #5799ef;
+}
+/* button,
+a {
+  background-color: currentColor;
+  color: currentColor;
+} */
+
+/* css dùng chung, dễ tái sử dụng */
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-main {
+    color:var(--color-main);
+}
+.title-main {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color:var(--color-main);
+}
+.title-white {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: var(--white);
+}
+.title-white:hover {
+  color:var(--color-main);
+}
+.hover:hover {
+    color:var(--color-hover);
+}
+/* button */
+.btn {
+  letter-spacing: .6px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn__txt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 0 16px;
+  border-radius: 4px;
+}
+.btn__txt span {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.btn__txt:hover {
+  background-color: var(--color-hover);
+}
+
+.fa-sort-down {
+  padding-bottom: 6px;
+}

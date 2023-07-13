@@ -1,0 +1,32 @@
+/* layout */
+body {
+  /* padding: 0 10px; */
+  width: 100vw;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --header__height: 32px;
+}
+.container {
+    display: block;
+    width: 100%;
+    padding: 6px 10px;
+}
+.container__section {
+    margin:0;
+}
+
+.trailer {
+    display: flex;
+    width: 100%;
+}
+.trailer__slider {
+    width: 838px;
+    height: 540px;
+    position: relative;
+    /* background-color: var(--black); */
+}
+.trailer__up-next {
+    width: calc(100% - 838px);
+}

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDb: Ratings, Reviews, and Where to Watch the Best Movies & TV Shows</title>
+<!-- link font chữ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- icon font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- link style -->
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/trailer.css">
+
+
+
+</head>
+<body>
+    <header class="header flex-row-center">
+        <a href="#" class="btn-text">
+            <img src="./assets/source/imgs/logo.svg" alt="logo" srcset="" />
+        </a>
+        <button class="btn btn__txt">
+            <i class="icon fa-solid fa-bars"></i>
+            <span>Menu</span>
+        </button>
+        <div class="form-search">
+            <input type="search" name="searchAll" id="searchAll" 
+            placeholder="Search IMBb"
+            >
+            <button class="form-search__type btn">
+                All
+            </button>
+            <button type="submit" class="form-search__submit btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+            
+        <button class="btn btn__txt">
+            <img src="./assets/source/imgs/logo-pro.svg" alt="logo-pro" srcset="">
+        </button>
+        <button  class="btn btn__txt">
+        <img class="icon" src="./assets/source/icons/watchlist.svg" alt="" srcset="">
+        <span>Watchlist</span>
+        </button>
+        <button class="btn btn__txt">
+        <img class="icon" src="./assets/source/icons/account.svg" alt="" srcset="">
+
+        <span>
+            B19DCCN638
+        </span>
+        <i class="icon fa-solid fa-sort-down"></i>
+        </button>
+        <button class="btn btn__txt">
+            <span>EN</span>
+
+        <i class="icon fa-solid fa-sort-down"></i>
+        </button>
+    </header>
+    <!-- phần nội dung chính -->
+    <section class="container">
+        <!-- section trailer -->
+        <section class="trailer container__section">
+            <div class="trailer__slider">
+                <img 
+                id="trailer__slider__img--current"
+                class="trailer__slider__img"
+                src="https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX500_CR0,0,500,281_.jpg" 
+                srcset="https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX500_CR0,0,500,281_.jpg 500w, https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX750_CR0,0,750,422_.jpg 750w, https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX1000_CR0,0,1000,563_.jpg 1000w"
+                alt="5 Things to Watch on Netflix" srcset="">
+                <div class="trailer__slider__control flex-row-center">
+                    <button class="btn btn--outlined">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="btn btn--outlined">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="trailer__slider__des">
+                    <div class="poster" style="width: 132px; height: 196px;">
+                        <img 
+                        src="https://m.media-amazon.com/images/M/MV5BNDYwOWUyMDItZTlkZi00YzYxLThlMmMtMzM5Yzk2NjVkZDliXkEyXkFqcGdeQXVyNjMwMzc3MjE@._V1_QL75_UX140_CR0,0,140,207_.jpg"
+                        alt="5 New Netflix Movies and Shows to Watch for the Week of June 26" 
+                        class="poster__img" 
+                        id="trailer__slider__poster--current"
+                        >
+                        <div class="poster__bookmark--add">
+                            <i class="fa-sharp fa-solid fa-bookmark"></i>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="description">
+                        <button class="btn btn--play" style="width: 72px; height: 72px; font-size: 24px;">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        <div class="des__trailer">
+                            <div class="des__trailer__title">
+                                <span class="title">
+                                    5 Things to Watch on Netflix
+                                </span>
+                                <span class="time">1:01</span>
+                            </div>
+                            <span class="des__trailer__bonus">
+                                Here's What's Hot
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trailer__up-next">
+                <h1 class="title-main ">Up next</h1>
+                <div class="up-next__list">
+                    <div class="up-next__item">
+                        <img alt="Ahsoka" class="up-next__item__img" loading="lazy" src="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX210_CR0,0,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX280_CR0,0,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                        <div class="up-next__item__des">
+
+                            <div class="media">
+                                <button class="btn btn--play" style="width: 32px; height: 32px; font-size: 12px;">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                                <span class="time">
+                                    2:13
+                                </span>
+                            </div>
+                            
+                            <p class="title">
+                                Ahsoka
+                            </p>
+                            <span class="bonus">
+                                What the trailer
+                            </span>
+                        </div>
+                    </div>
+                    <div class="up-next__item">
+                        <img alt="Ahsoka" class="up-next__item__img" loading="lazy" src="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX210_CR0,0,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX280_CR0,0,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                        <div class="up-next__item__des">
+
+                            <div class="media">
+                                <button class="btn btn--play" style="width: 32px; height: 32px; font-size: 12px;">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                                <span class="time">
+                                    2:13
+                                </span>
+                            </div>
+                            
+                            <p class="title">
+                                Ahsoka
+                            </p>
+                            <span class="bonus">
+                                What the trailer
+                            </span>
+                        </div>
+                    </div>
+                    <div class="up-next__item">
+                        <img alt="Ahsoka" class="up-next__item__img" loading="lazy" src="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX210_CR0,0,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX280_CR0,0,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                        <div class="up-next__item__des">
+
+                            <div class="media">
+                                <button class="btn btn--play" style="width: 32px; height: 32px; font-size: 12px;">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                                <span class="time">
+                                    2:13
+                                </span>
+                            </div>
+                            
+                            <p class="title">
+                                Ahsoka
+                            </p>
+                            <span class="bonus">
+                                What the trailer
+                            </span>
+                        </div>
+                    </div>
+                </div>
+               <h1 class="title-white">
+                <span>Browse trailers </span>
+                <i class="fa-solid fa-chevron-right"></i>
+               </h1>
+            </div>
+        </section>
+        <section class="container__section featured">
+            <h1 class="section__title">
+                fetured today 
+            </h1>
+            <div class="featured__slider slider--3">
+               <div class="featured__slider__item">slider 1</div>
+               <div class="featured__slider__item">slider 2</div>
+               <div class="featured__slider__item">slider 3</div>
+            </div>
+        </section>
+        <section class="container__section what-to-watch">
+            <h1 class="section__title">what to watch</h1>
+            <section class="container__section--children top-picks">
+                <h2 class="section--children__title">
+                    <span class="title">top picks</span>
+                    <span class="icon"></span>
+                </h2>
+                <h4 class="title">tv shows and movies just for you</h4>
+                <div class="top-picks__slider slider--6">
+                    <div class="top-picks__slider__item">top pick slider item 1</div>
+                    <div class="top-picks__slider__item">top pick slider item 2</div>
+                    <div class="top-picks__slider__item">top pick slider item 3</div>
+                    <div class="top-picks__slider__item">top pick slider item 4</div>
+                    <div class="top-picks__slider__item">top pick slider item 5</div>
+                    <div class="top-picks__slider__item">top pick slider item 6</div>
+                </div>
+            </section>
+            <section class="container__section--children watchlist">
+                <h2 class="section--children__title">
+                    <span class="title">
+                        From your Watchlist
+                    </span>
+                    <span class="icon"></span>
+                </h2>
+                <h4 class="title">
+                    Movies and TV shows that you have watchlisted
+                </h4>
+                <div class="watchlist__slider slider--6">
+                    <div class="watchlist__slider__item">watchlist slider item 1</div>
+                    <div class="watchlist__slider__item">watchlist slider item 2</div>
+                    <div class="watchlist__slider__item">watchlist slider item 3</div>
+                    <div class="watchlist__slider__item">watchlist slider item 4</div>
+                    <div class="watchlist__slider__item">watchlist slider item 5</div>
+                    <div class="watchlist__slider__item">watchlist slider item 6</div>
+                </div>
+            </section>
+            <section class="container__section--children top10">
+                <h2 class="section--children__title">
+                    <span class="title">
+                        Top 10 on IMDb this week
+                    </span>
+                </h2>
+                <div class="top10__slider slider--6">
+                    <div class="top10__slider__item">top10 slider item 1</div>
+                    <div class="top10__slider__item">top10 slider item 2</div>
+                    <div class="top10__slider__item">top10 slider item 3</div>
+                    <div class="top10__slider__item">top10 slider item 4</div>
+                    <div class="top10__slider__item">top10 slider item 5</div>
+                    <div class="top10__slider__item">top10 slider item 6</div>
+                </div>
+            </section>
+            <section class="container__section--children favorites">
+                <h2 class="section--children__title">
+                    <span class="title">
+                        Fan favorites
+                    </span>
+                    <span class="icon"></span>
+                </h2>
+                <h4 class="title">
+                    This week's top TV and movies
+                </h4>
+                <div class="favorites__slider slider--6">
+                    <div class="favorites__slider__item">favorites slider item 1</div>
+                    <div class="favorites__slider__item">favorites slider item 2</div>
+                    <div class="favorites__slider__item">favorites slider item 3</div>
+                    <div class="favorites__slider__item">favorites slider item 4</div>
+                    <div class="favorites__slider__item">favorites slider item 5</div>
+                    <div class="favorites__slider__item">favorites slider item 6</div>
+                </div>
+            </section>
+            <section class="container__section--children">
+                <h2 class="section--children__title">
+                    <span class="title">
+                        more to watch 
+                    </span>
+                </h2>
+                <h4 class="title">
+                    IMDb helps you select the perfect next show or movie to watch.
+                </h4>
+                <div class="more-to-watch__content">
+                    <button class="btn--outlined">watch guide</button>
+                    <button class="btn--outlined">most popular</button>
+                </div>
+            </section>
+        </section>
+        <section class="container__section exclusive">
+            <h1 class="title">
+                exclusive videos
+            </h1>
+            <section class="container__section--children">
+                <h2 class="section--children__title">
+                    <span class="title">
+                        iMDb Originals
+                    </span>
+                </h2>
+                <h4 class="title">
+                    Celebrity interviews, trending entertainment stories, and expert analysis
+                </h4>
+            </section>
+        </section>
+
+        </section>
+<section class="container__section explore">
+    <h1 class="title">Explore what's streaming</h1>
+    <section class="container__section--children prime">
+
+    </section>
+</section>
+    <section class="container__section explore-movie">
+        <h1 class="title">
+            Explore Movies & TV shows
+        </h1>
+    </section>
+    <section class="container__section more-to-explore">
+        <h1 class="title">
+            More to explore
+        </h1>
+        <section class="container__section--children">
+            <h2 class="section--children__title">
+                <span class="title">
+                    Editor's picks
+                </span>
+            </h2>
+           
+        </section>
+        <section class="container__section--children">
+            <h2 class="section--children__title">
+                <span class="title">
+                    Born today
+                </span>
+            </h2>
+           
+        </section>
+        <section class="container__section--children">
+            <h2 class="section--children__title">
+                <span class="title">
+                    Top news
+                </span>
+            </h2>
+           
+        </section>
+    </section>
+    <section class="container__section recently">
+        <div class="recently__header">
+            <h1 class="title">Recently viewed</h1>
+            <button class="btn-text">Clear all</button>
+        </div>
+    </section>
+    </section>
+    <footer class="footer">
+        đây là footer
+    </footer>
+</body>
+</html>
