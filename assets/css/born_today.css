@@ -1,0 +1,23 @@
+
+.born-today__item {
+    cursor: pointer;
+    /* z-index: 3; */
+
+    padding: 10px 0;
+    margin: 10px;
+}
+.born-today__item span {
+    margin-top: 10px;
+}
+.born-today__item:hover .born-today__item__avatar, .born-today__item__avatar:hover  {
+    opacity: 0.4;
+}
+.born-today__item__avatar {
+    width:183px ;
+    height: 183px;
+   border-radius: 50%;
+}
+
+.born-today__item__old {
+    color: var(--white-second);
+}

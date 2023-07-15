@@ -60,6 +60,10 @@ body {
     display: none;
   }
 
-.top10 .infor-more, .top10 .watch-now {
+.top10 .infor-more, .top10 .watch-list {
     display: none;
+}
+
+.top-box__list {
+   
 }

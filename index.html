@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMDb: Ratings, Reviews, and Where to Watch the Best Movies & TV Shows</title>
-<!-- link font chữ -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- link font chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- icon font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <!-- link style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link style -->
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/trailer.css">
     <link rel="stylesheet" href="./assets/css/featured_today.css">
     <link rel="stylesheet" href="./assets/css/top_picks.css">
+    <link rel="stylesheet" href="./assets/css/box_movie.css">
+    <link rel="stylesheet" href="./assets/css/born_today.css">
+    <link rel="stylesheet" href="./assets/css/top_news.css">
+
+
 
 
 </head>
+
 <body>
     <header class="header flex-row-center">
         <a href="#" class="btn-text">
@@ -30,9 +41,7 @@
             <span>Menu</span>
         </button>
         <div class="form-search">
-            <input type="search" name="searchAll" id="searchAll" 
-            placeholder="Search IMBb"
-            >
+            <input type="search" name="searchAll" id="searchAll" placeholder="Search IMBb">
             <button class="form-search__type btn" style="color:var(--black-second)">
                 All
             </button>
@@ -40,26 +49,26 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
-            
+
         <button class="btn btn__txt">
             <img src="./assets/source/imgs/logo-pro.svg" alt="logo-pro" srcset="">
         </button>
-        <button  class="btn btn__txt">
-        <img class="icon" src="./assets/source/icons/watchlist.svg" alt="" srcset="">
-        <span>Watchlist</span>
+        <button class="btn btn__txt">
+            <img class="icon" src="./assets/source/icons/watchlist.svg" alt="" srcset="">
+            <span>Watchlist</span>
         </button>
         <button class="btn btn__txt">
-        <img class="icon" src="./assets/source/icons/account.svg" alt="" srcset="">
+            <img class="icon" src="./assets/source/icons/account.svg" alt="" srcset="">
 
-        <span>
-            B19DCCN638
-        </span>
-        <i class="icon fa-solid fa-sort-down"></i>
+            <span>
+                B19DCCN638
+            </span>
+            <i class="icon fa-solid fa-sort-down"></i>
         </button>
         <button class="btn btn__txt">
             <span>EN</span>
 
-        <i class="icon fa-solid fa-sort-down"></i>
+            <i class="icon fa-solid fa-sort-down"></i>
         </button>
     </header>
     <!-- phần nội dung chính -->
@@ -76,21 +85,16 @@
 
                     </button>
                 </div>
-                <img 
-                id="trailer__slider__img--current"
-                class="trailer__slider__img"
-                src="https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX500_CR0,0,500,281_.jpg" 
-                srcset="https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX500_CR0,0,500,281_.jpg 500w, https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX750_CR0,0,750,422_.jpg 750w, https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX1000_CR0,0,1000,563_.jpg 1000w"
-                alt="5 Things to Watch on Netflix" srcset="">
-               
+                <img id="trailer__slider__img--current" class="trailer__slider__img"
+                    src="https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX500_CR0,0,500,281_.jpg"
+                    srcset="https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX500_CR0,0,500,281_.jpg 500w, https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX750_CR0,0,750,422_.jpg 750w, https://m.media-amazon.com/images/M/MV5BMTYzOWVlNDUtMTdkYi00YTgzLWIyODctMzZhZGZmYWEyMGViXkEyXkFqcGdeQWplZmZscA@@._V1_QL40_QL75_UX1000_CR0,0,1000,563_.jpg 1000w"
+                    alt="5 Things to Watch on Netflix" srcset="">
+
                 <div class="trailer__slider__des">
                     <div class="poster" style="width: 132px; height: 196px;">
-                        <img 
-                        src="https://m.media-amazon.com/images/M/MV5BNDYwOWUyMDItZTlkZi00YzYxLThlMmMtMzM5Yzk2NjVkZDliXkEyXkFqcGdeQXVyNjMwMzc3MjE@._V1_QL75_UX140_CR0,0,140,207_.jpg"
-                        alt="5 New Netflix Movies and Shows to Watch for the Week of June 26" 
-                        class="poster__img" 
-                        id="trailer__slider__poster--current"
-                        >
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDYwOWUyMDItZTlkZi00YzYxLThlMmMtMzM5Yzk2NjVkZDliXkEyXkFqcGdeQXVyNjMwMzc3MjE@._V1_QL75_UX140_CR0,0,140,207_.jpg"
+                            alt="5 New Netflix Movies and Shows to Watch for the Week of June 26" class="poster__img"
+                            id="trailer__slider__poster--current">
                         <div class="poster__bookmark--add">
                             <i class="fa-sharp fa-solid fa-bookmark"></i>
                             <i class="fa-solid fa-plus"></i>
@@ -119,7 +123,11 @@
                 <h1 class="title-main ">Up next</h1>
                 <div class="up-next__list">
                     <div class="up-next__item">
-                        <img alt="Ahsoka" class="up-next__item__img" loading="lazy" src="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX210_CR0,0,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX280_CR0,0,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                        <img alt="Ahsoka" class="up-next__item__img" loading="lazy"
+                            src="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg"
+                            srcset="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX210_CR0,0,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX280_CR0,0,280,414_.jpg 280w"
+                            sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                            width="140">
                         <div class="up-next__item__des">
 
                             <div class="media">
@@ -130,7 +138,7 @@
                                     2:13
                                 </span>
                             </div>
-                            
+
                             <p class="title">
                                 Ahsoka
                             </p>
@@ -140,7 +148,11 @@
                         </div>
                     </div>
                     <div class="up-next__item">
-                        <img alt="Ahsoka" class="up-next__item__img" loading="lazy" src="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX210_CR0,0,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX280_CR0,0,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                        <img alt="Ahsoka" class="up-next__item__img" loading="lazy"
+                            src="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg"
+                            srcset="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX210_CR0,0,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX280_CR0,0,280,414_.jpg 280w"
+                            sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                            width="140">
                         <div class="up-next__item__des">
 
                             <div class="media">
@@ -151,7 +163,7 @@
                                     2:13
                                 </span>
                             </div>
-                            
+
                             <p class="title">
                                 Ahsoka
                             </p>
@@ -161,7 +173,11 @@
                         </div>
                     </div>
                     <div class="up-next__item">
-                        <img alt="Ahsoka" class="up-next__item__img" loading="lazy" src="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX210_CR0,0,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX280_CR0,0,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
+                        <img alt="Ahsoka" class="up-next__item__img" loading="lazy"
+                            src="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg"
+                            srcset="https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX210_CR0,0,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMWM1NjU1MDgtYjhjYS00Mjg5LWE1MWEtNzUwNWMxNTU2ZWY3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX280_CR0,0,280,414_.jpg 280w"
+                            sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                            width="140">
                         <div class="up-next__item__des">
 
                             <div class="media">
@@ -172,7 +188,7 @@
                                     2:13
                                 </span>
                             </div>
-                            
+
                             <p class="title">
                                 Ahsoka
                             </p>
@@ -182,15 +198,15 @@
                         </div>
                     </div>
                 </div>
-               <h1 class="title-white">
-                <span>Browse trailers </span>
-                <i class="fa-solid fa-chevron-right"></i>
-               </h1>
+                <h1 class="title-white">
+                    <span>Browse trailers </span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </h1>
             </div>
         </section>
         <section class="container__section featured">
             <h1 class="section__title">
-                fetured today 
+                fetured today
             </h1>
             <div class="trailer__slider slider--2" style="height:312px;">
                 <div class="trailer__slider__control flex-row-center">
@@ -204,31 +220,47 @@
                 <div class="featured__list flex-row-center">
                     <div class="featured__item flex-column-center">
                         <div class="featured__item__img">
-                            <img alt="Production art" class="ipc-image" loading="lazy" src="https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg 380w, https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX570_CR0,0,570,321_.jpg 570w, https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX760_CR0,0,760,428_.jpg 760w" sizes="100vw, (min-width: 480px) 68vw, (min-width: 600px) 52vw, (min-width: 1024px) 32vw, (min-width: 1280px) 32vw" width="380">
+                            <img alt="Production art" class="ipc-image" loading="lazy"
+                                src="https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg"
+                                srcset="https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg 380w, https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX570_CR0,0,570,321_.jpg 570w, https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX760_CR0,0,760,428_.jpg 760w"
+                                sizes="100vw, (min-width: 480px) 68vw, (min-width: 600px) 52vw, (min-width: 1024px) 32vw, (min-width: 1280px) 32vw"
+                                width="380">
                             <div class="img__des">
                                 <i class="fa-solid fa-list"></i>
                                 <span>List</span>
                             </div>
                         </div>
-                        <a class="featured__item__title color-white " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_ft_lst_csegmybo_epi_3_t" target="_blank" rel="noopener noreferrer">
+                        <a class="featured__item__title color-white "
+                            href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_ft_lst_csegmybo_epi_3_t"
+                            target="_blank" rel="noopener noreferrer">
                             10 Top-Rated Episodes From 2023's Best Series
                         </a>
-                        <a class="featured__item__bonus color-blue " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_c_ft_lst_csegmybo_epi_3_cta" target="_blank" rel="noopener noreferrer">
+                        <a class="featured__item__bonus color-blue "
+                            href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_c_ft_lst_csegmybo_epi_3_cta"
+                            target="_blank" rel="noopener noreferrer">
                             See the list
                         </a>
                     </div>
                     <div class="featured__item flex-column-center">
                         <div class="featured__item__img">
-                            <img alt="Production art" class="ipc-image" loading="lazy" src="https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg 380w, https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX570_CR0,0,570,321_.jpg 570w, https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX760_CR0,0,760,428_.jpg 760w" sizes="100vw, (min-width: 480px) 68vw, (min-width: 600px) 52vw, (min-width: 1024px) 32vw, (min-width: 1280px) 32vw" width="380">
+                            <img alt="Production art" class="ipc-image" loading="lazy"
+                                src="https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg"
+                                srcset="https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg 380w, https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX570_CR0,0,570,321_.jpg 570w, https://m.media-amazon.com/images/M/MV5BNDM1ZWJiMzAtYmQ0NC00ZTJkLTljZTctMWI5ZTU3ZGM3OGY4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX760_CR0,0,760,428_.jpg 760w"
+                                sizes="100vw, (min-width: 480px) 68vw, (min-width: 600px) 52vw, (min-width: 1024px) 32vw, (min-width: 1280px) 32vw"
+                                width="380">
                             <div class="img__des">
                                 <i class="fa-solid fa-list"></i>
                                 <span>List</span>
                             </div>
                         </div>
-                        <a class="featured__item__title color-white " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_ft_lst_csegmybo_epi_3_t" target="_blank" rel="noopener noreferrer">
+                        <a class="featured__item__title color-white "
+                            href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_ft_lst_csegmybo_epi_3_t"
+                            target="_blank" rel="noopener noreferrer">
                             10 Top-Rated Episodes From 2023's Best Series
                         </a>
-                        <a class="featured__item__bonus color-blue " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_c_ft_lst_csegmybo_epi_3_cta" target="_blank" rel="noopener noreferrer">
+                        <a class="featured__item__bonus color-blue "
+                            href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_c_ft_lst_csegmybo_epi_3_cta"
+                            target="_blank" rel="noopener noreferrer">
                             See the list
                         </a>
                     </div>
@@ -263,13 +295,13 @@
                     </div>
                     <div class="top-picks__slider__item poster-card">
                         <div class="poster" style="width: 186px; height: 272px;">
-                            <img 
-                            alt="Chú Thuật Hồi Chiến" 
-                            class="poster__img" 
-                            id="trailer__slider__poster--current" 
-                            loading="lazy" 
-                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
-                            
+                            <img alt="Chú Thuật Hồi Chiến" class="poster__img" id="trailer__slider__poster--current"
+                                loading="lazy"
+                                src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg"
+                                srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w"
+                                sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                                width="140">
+
                             <div class="poster__bookmark--add">
                                 <i class="fa-sharp fa-solid fa-bookmark"></i>
                                 <i class="fa-solid fa-plus"></i>
@@ -279,9 +311,9 @@
                             <div class="rating flex-row-center" style="padding-left: 8px;">
                                 <i class="fa-solid fa-star color-main"></i>
                                 <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
-                               <button class="btn btn__icon">
-                                   <i class="fa-regular fa-star color-blue"></i>
-                               </button>
+                                <button class="btn btn__icon">
+                                    <i class="fa-regular fa-star color-blue"></i>
+                                </button>
                             </div>
                             <div class="flex-column-center" style="padding: 8px;">
                                 <p class="title">
@@ -311,13 +343,13 @@
                     </div>
                     <div class="top-picks__slider__item poster-card">
                         <div class="poster" style="width: 186px; height: 272px;">
-                            <img 
-                            alt="Chú Thuật Hồi Chiến" 
-                            class="poster__img" 
-                            id="trailer__slider__poster--current" 
-                            loading="lazy" 
-                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
-                            
+                            <img alt="Chú Thuật Hồi Chiến" class="poster__img" id="trailer__slider__poster--current"
+                                loading="lazy"
+                                src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg"
+                                srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w"
+                                sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                                width="140">
+
                             <div class="poster__bookmark--add">
                                 <i class="fa-sharp fa-solid fa-bookmark"></i>
                                 <i class="fa-solid fa-plus"></i>
@@ -327,9 +359,9 @@
                             <div class="rating flex-row-center" style="padding-left: 8px;">
                                 <i class="fa-solid fa-star color-main"></i>
                                 <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
-                               <button class="btn btn__icon">
-                                   <i class="fa-regular fa-star color-blue"></i>
-                               </button>
+                                <button class="btn btn__icon">
+                                    <i class="fa-regular fa-star color-blue"></i>
+                                </button>
                             </div>
                             <div class="flex-column-center" style="padding: 8px;">
                                 <p class="title">
@@ -359,13 +391,13 @@
                     </div>
                     <div class="top-picks__slider__item poster-card">
                         <div class="poster" style="width: 186px; height: 272px;">
-                            <img 
-                            alt="Chú Thuật Hồi Chiến" 
-                            class="poster__img" 
-                            id="trailer__slider__poster--current" 
-                            loading="lazy" 
-                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
-                            
+                            <img alt="Chú Thuật Hồi Chiến" class="poster__img" id="trailer__slider__poster--current"
+                                loading="lazy"
+                                src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg"
+                                srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w"
+                                sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                                width="140">
+
                             <div class="poster__bookmark--add">
                                 <i class="fa-sharp fa-solid fa-bookmark"></i>
                                 <i class="fa-solid fa-plus"></i>
@@ -375,9 +407,9 @@
                             <div class="rating flex-row-center" style="padding-left: 8px;">
                                 <i class="fa-solid fa-star color-main"></i>
                                 <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
-                               <button class="btn btn__icon">
-                                   <i class="fa-regular fa-star color-blue"></i>
-                               </button>
+                                <button class="btn btn__icon">
+                                    <i class="fa-regular fa-star color-blue"></i>
+                                </button>
                             </div>
                             <div class="flex-column-center" style="padding: 8px;">
                                 <p class="title">
@@ -407,13 +439,13 @@
                     </div>
                     <div class="top-picks__slider__item poster-card">
                         <div class="poster" style="width: 186px; height: 272px;">
-                            <img 
-                            alt="Chú Thuật Hồi Chiến" 
-                            class="poster__img" 
-                            id="trailer__slider__poster--current" 
-                            loading="lazy" 
-                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
-                            
+                            <img alt="Chú Thuật Hồi Chiến" class="poster__img" id="trailer__slider__poster--current"
+                                loading="lazy"
+                                src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg"
+                                srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w"
+                                sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                                width="140">
+
                             <div class="poster__bookmark--add">
                                 <i class="fa-sharp fa-solid fa-bookmark"></i>
                                 <i class="fa-solid fa-plus"></i>
@@ -423,9 +455,9 @@
                             <div class="rating flex-row-center" style="padding-left: 8px;">
                                 <i class="fa-solid fa-star color-main"></i>
                                 <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
-                               <button class="btn btn__icon">
-                                   <i class="fa-regular fa-star color-blue"></i>
-                               </button>
+                                <button class="btn btn__icon">
+                                    <i class="fa-regular fa-star color-blue"></i>
+                                </button>
                             </div>
                             <div class="flex-column-center" style="padding: 8px;">
                                 <p class="title">
@@ -455,13 +487,13 @@
                     </div>
                     <div class="top-picks__slider__item poster-card">
                         <div class="poster" style="width: 186px; height: 272px;">
-                            <img 
-                            alt="Chú Thuật Hồi Chiến" 
-                            class="poster__img" 
-                            id="trailer__slider__poster--current" 
-                            loading="lazy" 
-                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
-                            
+                            <img alt="Chú Thuật Hồi Chiến" class="poster__img" id="trailer__slider__poster--current"
+                                loading="lazy"
+                                src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg"
+                                srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w"
+                                sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                                width="140">
+
                             <div class="poster__bookmark--add">
                                 <i class="fa-sharp fa-solid fa-bookmark"></i>
                                 <i class="fa-solid fa-plus"></i>
@@ -471,9 +503,9 @@
                             <div class="rating flex-row-center" style="padding-left: 8px;">
                                 <i class="fa-solid fa-star color-main"></i>
                                 <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
-                               <button class="btn btn__icon">
-                                   <i class="fa-regular fa-star color-blue"></i>
-                               </button>
+                                <button class="btn btn__icon">
+                                    <i class="fa-regular fa-star color-blue"></i>
+                                </button>
                             </div>
                             <div class="flex-column-center" style="padding: 8px;">
                                 <p class="title">
@@ -503,13 +535,13 @@
                     </div>
                     <div class="top-picks__slider__item poster-card">
                         <div class="poster" style="width: 186px; height: 272px;">
-                            <img 
-                            alt="Chú Thuật Hồi Chiến" 
-                            class="poster__img" 
-                            id="trailer__slider__poster--current" 
-                            loading="lazy" 
-                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
-                            
+                            <img alt="Chú Thuật Hồi Chiến" class="poster__img" id="trailer__slider__poster--current"
+                                loading="lazy"
+                                src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg"
+                                srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w"
+                                sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                                width="140">
+
                             <div class="poster__bookmark--add">
                                 <i class="fa-sharp fa-solid fa-bookmark"></i>
                                 <i class="fa-solid fa-plus"></i>
@@ -519,9 +551,9 @@
                             <div class="rating flex-row-center" style="padding-left: 8px;">
                                 <i class="fa-solid fa-star color-main"></i>
                                 <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
-                               <button class="btn btn__icon">
-                                   <i class="fa-regular fa-star color-blue"></i>
-                               </button>
+                                <button class="btn btn__icon">
+                                    <i class="fa-regular fa-star color-blue"></i>
+                                </button>
                             </div>
                             <div class="flex-column-center" style="padding: 8px;">
                                 <p class="title">
@@ -549,12 +581,12 @@
                             </div>
                         </div>
                     </div>
-               
+
                 </div>
-              
+
             </section>
             <section class="container__section--children watchlist">
-               
+
                 <h2 class="section--children__title">
                     <span class="hr"></span>
                     <span class="title"> From your Watchlist</span>
@@ -565,14 +597,14 @@
                 <h4 class="title">
                     Movies and TV shows that you have watchlisted
                 </h4>
-                
+
             </section>
             <section class="container__section--children top10">
-                
+
                 <h2 class="section--children__title">
                     <span class="hr"></span>
                     <span class="title"> Top 10 on IMDb this week</span>
-                  
+
                 </h2>
                 <div class="trailer__slider top-picks__slider slider--6" style=" height: fit-content; width: 100%;">
                     <div class="trailer__slider__control flex-row-center">
@@ -585,13 +617,13 @@
                     </div>
                     <div class="top-picks__slider__item poster-card">
                         <div class="poster" style="width: 186px; height: 272px;">
-                            <img 
-                            alt="Chú Thuật Hồi Chiến" 
-                            class="poster__img" 
-                            id="trailer__slider__poster--current" 
-                            loading="lazy" 
-                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
-                            
+                            <img alt="Chú Thuật Hồi Chiến" class="poster__img" id="trailer__slider__poster--current"
+                                loading="lazy"
+                                src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg"
+                                srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w"
+                                sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                                width="140">
+
                             <div class="poster__bookmark--add">
                                 <i class="fa-sharp fa-solid fa-bookmark"></i>
                                 <i class="fa-solid fa-plus"></i>
@@ -601,9 +633,9 @@
                             <div class="rating flex-row-center" style="padding-left: 8px;">
                                 <i class="fa-solid fa-star color-main"></i>
                                 <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
-                               <button class="btn btn__icon">
-                                   <i class="fa-regular fa-star color-blue"></i>
-                               </button>
+                                <button class="btn btn__icon">
+                                    <i class="fa-regular fa-star color-blue"></i>
+                                </button>
                             </div>
                             <div class="flex-column-center" style="padding: 8px;">
                                 <p class="title">
@@ -633,13 +665,13 @@
                     </div>
                     <div class="top-picks__slider__item poster-card">
                         <div class="poster" style="width: 186px; height: 272px;">
-                            <img 
-                            alt="Chú Thuật Hồi Chiến" 
-                            class="poster__img" 
-                            id="trailer__slider__poster--current" 
-                            loading="lazy" 
-                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
-                            
+                            <img alt="Chú Thuật Hồi Chiến" class="poster__img" id="trailer__slider__poster--current"
+                                loading="lazy"
+                                src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg"
+                                srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w"
+                                sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                                width="140">
+
                             <div class="poster__bookmark--add">
                                 <i class="fa-sharp fa-solid fa-bookmark"></i>
                                 <i class="fa-solid fa-plus"></i>
@@ -649,9 +681,9 @@
                             <div class="rating flex-row-center" style="padding-left: 8px;">
                                 <i class="fa-solid fa-star color-main"></i>
                                 <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
-                               <button class="btn btn__icon">
-                                   <i class="fa-regular fa-star color-blue"></i>
-                               </button>
+                                <button class="btn btn__icon">
+                                    <i class="fa-regular fa-star color-blue"></i>
+                                </button>
                             </div>
                             <div class="flex-column-center" style="padding: 8px;">
                                 <p class="title">
@@ -681,13 +713,13 @@
                     </div>
                     <div class="top-picks__slider__item poster-card">
                         <div class="poster" style="width: 186px; height: 272px;">
-                            <img 
-                            alt="Chú Thuật Hồi Chiến" 
-                            class="poster__img" 
-                            id="trailer__slider__poster--current" 
-                            loading="lazy" 
-                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
-                            
+                            <img alt="Chú Thuật Hồi Chiến" class="poster__img" id="trailer__slider__poster--current"
+                                loading="lazy"
+                                src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg"
+                                srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w"
+                                sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                                width="140">
+
                             <div class="poster__bookmark--add">
                                 <i class="fa-sharp fa-solid fa-bookmark"></i>
                                 <i class="fa-solid fa-plus"></i>
@@ -697,9 +729,9 @@
                             <div class="rating flex-row-center" style="padding-left: 8px;">
                                 <i class="fa-solid fa-star color-main"></i>
                                 <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
-                               <button class="btn btn__icon">
-                                   <i class="fa-regular fa-star color-blue"></i>
-                               </button>
+                                <button class="btn btn__icon">
+                                    <i class="fa-regular fa-star color-blue"></i>
+                                </button>
                             </div>
                             <div class="flex-column-center" style="padding: 8px;">
                                 <p class="title">
@@ -729,13 +761,13 @@
                     </div>
                     <div class="top-picks__slider__item poster-card">
                         <div class="poster" style="width: 186px; height: 272px;">
-                            <img 
-                            alt="Chú Thuật Hồi Chiến" 
-                            class="poster__img" 
-                            id="trailer__slider__poster--current" 
-                            loading="lazy" 
-                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
-                            
+                            <img alt="Chú Thuật Hồi Chiến" class="poster__img" id="trailer__slider__poster--current"
+                                loading="lazy"
+                                src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg"
+                                srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w"
+                                sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                                width="140">
+
                             <div class="poster__bookmark--add">
                                 <i class="fa-sharp fa-solid fa-bookmark"></i>
                                 <i class="fa-solid fa-plus"></i>
@@ -745,9 +777,9 @@
                             <div class="rating flex-row-center" style="padding-left: 8px;">
                                 <i class="fa-solid fa-star color-main"></i>
                                 <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
-                               <button class="btn btn__icon">
-                                   <i class="fa-regular fa-star color-blue"></i>
-                               </button>
+                                <button class="btn btn__icon">
+                                    <i class="fa-regular fa-star color-blue"></i>
+                                </button>
                             </div>
                             <div class="flex-column-center" style="padding: 8px;">
                                 <p class="title">
@@ -777,13 +809,13 @@
                     </div>
                     <div class="top-picks__slider__item poster-card">
                         <div class="poster" style="width: 186px; height: 272px;">
-                            <img 
-                            alt="Chú Thuật Hồi Chiến" 
-                            class="poster__img" 
-                            id="trailer__slider__poster--current" 
-                            loading="lazy" 
-                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
-                            
+                            <img alt="Chú Thuật Hồi Chiến" class="poster__img" id="trailer__slider__poster--current"
+                                loading="lazy"
+                                src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg"
+                                srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w"
+                                sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                                width="140">
+
                             <div class="poster__bookmark--add">
                                 <i class="fa-sharp fa-solid fa-bookmark"></i>
                                 <i class="fa-solid fa-plus"></i>
@@ -793,9 +825,9 @@
                             <div class="rating flex-row-center" style="padding-left: 8px;">
                                 <i class="fa-solid fa-star color-main"></i>
                                 <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
-                               <button class="btn btn__icon">
-                                   <i class="fa-regular fa-star color-blue"></i>
-                               </button>
+                                <button class="btn btn__icon">
+                                    <i class="fa-regular fa-star color-blue"></i>
+                                </button>
                             </div>
                             <div class="flex-column-center" style="padding: 8px;">
                                 <p class="title">
@@ -825,13 +857,13 @@
                     </div>
                     <div class="top-picks__slider__item poster-card">
                         <div class="poster" style="width: 186px; height: 272px;">
-                            <img 
-                            alt="Chú Thuật Hồi Chiến" 
-                            class="poster__img" 
-                            id="trailer__slider__poster--current" 
-                            loading="lazy" 
-                            src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="140">
-                            
+                            <img alt="Chú Thuật Hồi Chiến" class="poster__img" id="trailer__slider__poster--current"
+                                loading="lazy"
+                                src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg"
+                                srcset="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg 140w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX210_CR0,2,210,311_.jpg 210w, https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX280_CR0,3,280,414_.jpg 280w"
+                                sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                                width="140">
+
                             <div class="poster__bookmark--add">
                                 <i class="fa-sharp fa-solid fa-bookmark"></i>
                                 <i class="fa-solid fa-plus"></i>
@@ -841,9 +873,9 @@
                             <div class="rating flex-row-center" style="padding-left: 8px;">
                                 <i class="fa-solid fa-star color-main"></i>
                                 <span class="score" style="color: var(--white-second); margin-right: 16px;">7.9</span>
-                               <button class="btn btn__icon">
-                                   <i class="fa-regular fa-star color-blue"></i>
-                               </button>
+                                <button class="btn btn__icon">
+                                    <i class="fa-regular fa-star color-blue"></i>
+                                </button>
                             </div>
                             <div class="flex-column-center" style="padding: 8px;">
                                 <p class="title">
@@ -871,7 +903,7 @@
                             </div>
                         </div>
                     </div>
-               
+
                 </div>
             </section>
             <section class="container__section--children favorites">
@@ -901,7 +933,7 @@
                 <h2 class="section--children__title">
                     <span class="hr"></span>
                     <span class="title">
-                        more to watch 
+                        more to watch
                     </span>
                 </h2>
                 <h4 class="title">
@@ -939,53 +971,81 @@
                     <div class="featured__list flex-row-center">
                         <div class="featured__item flex-column-center">
                             <div class="featured__item__img">
-                                <img alt="Our 5 Favorite Shows of 2023 (So Far)" class="ipc-image" loading="lazy" src="https://m.media-amazon.com/images/M/MV5BZDRkNjE0Y2ItNDJjMS00MzM3LWE0M2EtNWMyZmI2ZTY4YTZmXkEyXkFqcGdeQWplZmZscA@@._V1_QL75_UX380_CR0,0,380,214_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BZDRkNjE0Y2ItNDJjMS00MzM3LWE0M2EtNWMyZmI2ZTY4YTZmXkEyXkFqcGdeQWplZmZscA@@._V1_QL75_UX380_CR0,0,380,214_.jpg 380w, https://m.media-amazon.com/images/M/MV5BZDRkNjE0Y2ItNDJjMS00MzM3LWE0M2EtNWMyZmI2ZTY4YTZmXkEyXkFqcGdeQWplZmZscA@@._V1_QL75_UX570_CR0,0,570,321_.jpg 570w, https://m.media-amazon.com/images/M/MV5BZDRkNjE0Y2ItNDJjMS00MzM3LWE0M2EtNWMyZmI2ZTY4YTZmXkEyXkFqcGdeQWplZmZscA@@._V1_QL75_UX760_CR0,0,760,428_.jpg 760w" sizes="100vw, (min-width: 480px) 68vw, (min-width: 600px) 52vw, (min-width: 1024px) 32vw, (min-width: 1280px) 32vw" width="380">
+                                <img alt="Our 5 Favorite Shows of 2023 (So Far)" class="ipc-image" loading="lazy"
+                                    src="https://m.media-amazon.com/images/M/MV5BZDRkNjE0Y2ItNDJjMS00MzM3LWE0M2EtNWMyZmI2ZTY4YTZmXkEyXkFqcGdeQWplZmZscA@@._V1_QL75_UX380_CR0,0,380,214_.jpg"
+                                    srcset="https://m.media-amazon.com/images/M/MV5BZDRkNjE0Y2ItNDJjMS00MzM3LWE0M2EtNWMyZmI2ZTY4YTZmXkEyXkFqcGdeQWplZmZscA@@._V1_QL75_UX380_CR0,0,380,214_.jpg 380w, https://m.media-amazon.com/images/M/MV5BZDRkNjE0Y2ItNDJjMS00MzM3LWE0M2EtNWMyZmI2ZTY4YTZmXkEyXkFqcGdeQWplZmZscA@@._V1_QL75_UX570_CR0,0,570,321_.jpg 570w, https://m.media-amazon.com/images/M/MV5BZDRkNjE0Y2ItNDJjMS00MzM3LWE0M2EtNWMyZmI2ZTY4YTZmXkEyXkFqcGdeQWplZmZscA@@._V1_QL75_UX760_CR0,0,760,428_.jpg 760w"
+                                    sizes="100vw, (min-width: 480px) 68vw, (min-width: 600px) 52vw, (min-width: 1024px) 32vw, (min-width: 1280px) 32vw"
+                                    width="380">
                                 <div class="img__des">
-                                    <button class="btn btn--play" style="width: 28px; height: 28px; font-size: 14px; padding-left: 8px;">
+                                    <button class="btn btn--play"
+                                        style="width: 28px; height: 28px; font-size: 14px; padding-left: 8px;">
                                         <i class="fa-solid fa-play"></i>
                                     </button>
                                     <span>1:01</span>
                                 </div>
                             </div>
-                            <a class="featured__item__title color-white " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_ft_lst_csegmybo_epi_3_t" target="_blank" rel="noopener noreferrer">
+                            <a class="featured__item__title color-white "
+                                href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_ft_lst_csegmybo_epi_3_t"
+                                target="_blank" rel="noopener noreferrer">
                                 Our 5 Favorite Shows of 2023 (So Far)
                             </a>
-                            <a class="featured__item__bonus color-blue " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_c_ft_lst_csegmybo_epi_3_cta" target="_blank" rel="noopener noreferrer">
-                               Watch the video
+                            <a class="featured__item__bonus color-blue "
+                                href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_c_ft_lst_csegmybo_epi_3_cta"
+                                target="_blank" rel="noopener noreferrer">
+                                Watch the video
                             </a>
                         </div>
                         <div class="featured__item flex-column-center">
                             <div class="featured__item__img">
-                                <img alt="&quot;The Summer I Turned Pretty&quot; Cast Answers Fan Questions" class="ipc-image" loading="lazy" src="https://m.media-amazon.com/images/M/MV5BYzU4ODA4ODYtM2Y1YS00NTU5LWFhN2UtMjlmZjcxYzdiOTFmXkEyXkFqcGdeQXNhcmFocmVi._V1_QL75_UX380_CR0,0,380,214_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BYzU4ODA4ODYtM2Y1YS00NTU5LWFhN2UtMjlmZjcxYzdiOTFmXkEyXkFqcGdeQXNhcmFocmVi._V1_QL75_UX380_CR0,0,380,214_.jpg 380w, https://m.media-amazon.com/images/M/MV5BYzU4ODA4ODYtM2Y1YS00NTU5LWFhN2UtMjlmZjcxYzdiOTFmXkEyXkFqcGdeQXNhcmFocmVi._V1_QL75_UX570_CR0,0,570,321_.jpg 570w, https://m.media-amazon.com/images/M/MV5BYzU4ODA4ODYtM2Y1YS00NTU5LWFhN2UtMjlmZjcxYzdiOTFmXkEyXkFqcGdeQXNhcmFocmVi._V1_QL75_UX760_CR0,0,760,428_.jpg 760w" sizes="100vw, (min-width: 480px) 68vw, (min-width: 600px) 52vw, (min-width: 1024px) 32vw, (min-width: 1280px) 32vw" width="380">
+                                <img alt="&quot;The Summer I Turned Pretty&quot; Cast Answers Fan Questions"
+                                    class="ipc-image" loading="lazy"
+                                    src="https://m.media-amazon.com/images/M/MV5BYzU4ODA4ODYtM2Y1YS00NTU5LWFhN2UtMjlmZjcxYzdiOTFmXkEyXkFqcGdeQXNhcmFocmVi._V1_QL75_UX380_CR0,0,380,214_.jpg"
+                                    srcset="https://m.media-amazon.com/images/M/MV5BYzU4ODA4ODYtM2Y1YS00NTU5LWFhN2UtMjlmZjcxYzdiOTFmXkEyXkFqcGdeQXNhcmFocmVi._V1_QL75_UX380_CR0,0,380,214_.jpg 380w, https://m.media-amazon.com/images/M/MV5BYzU4ODA4ODYtM2Y1YS00NTU5LWFhN2UtMjlmZjcxYzdiOTFmXkEyXkFqcGdeQXNhcmFocmVi._V1_QL75_UX570_CR0,0,570,321_.jpg 570w, https://m.media-amazon.com/images/M/MV5BYzU4ODA4ODYtM2Y1YS00NTU5LWFhN2UtMjlmZjcxYzdiOTFmXkEyXkFqcGdeQXNhcmFocmVi._V1_QL75_UX760_CR0,0,760,428_.jpg 760w"
+                                    sizes="100vw, (min-width: 480px) 68vw, (min-width: 600px) 52vw, (min-width: 1024px) 32vw, (min-width: 1280px) 32vw"
+                                    width="380">
                                 <div class="img__des">
-                                    <button class="btn btn--play" style="width: 28px; height: 28px; font-size: 14px; padding-left: 8px;">
+                                    <button class="btn btn--play"
+                                        style="width: 28px; height: 28px; font-size: 14px; padding-left: 8px;">
                                         <i class="fa-solid fa-play"></i>
                                     </button>
                                     <span>1:01</span>
                                 </div>
                             </div>
-                            <a class="featured__item__title color-white " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_ft_lst_csegmybo_epi_3_t" target="_blank" rel="noopener noreferrer">
+                            <a class="featured__item__title color-white "
+                                href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_ft_lst_csegmybo_epi_3_t"
+                                target="_blank" rel="noopener noreferrer">
                                 &quot;The Summer I Turned Pretty&quot; Cast Answers Fan Questions
                             </a>
-                            <a class="featured__item__bonus color-blue " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_c_ft_lst_csegmybo_epi_3_cta" target="_blank" rel="noopener noreferrer">
-                               Watch the video
+                            <a class="featured__item__bonus color-blue "
+                                href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_c_ft_lst_csegmybo_epi_3_cta"
+                                target="_blank" rel="noopener noreferrer">
+                                Watch the video
                             </a>
                         </div>
                         <div class="featured__item flex-column-center">
                             <div class="featured__item__img">
-                                <img alt="Production art" class="ipc-image" loading="lazy" src="https://m.media-amazon.com/images/M/MV5BNmJhMDMwMTMtYWU5YS00ODRhLThhMDQtYTYxNGM4YzdhYTI2XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BNmJhMDMwMTMtYWU5YS00ODRhLThhMDQtYTYxNGM4YzdhYTI2XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg 380w, https://m.media-amazon.com/images/M/MV5BNmJhMDMwMTMtYWU5YS00ODRhLThhMDQtYTYxNGM4YzdhYTI2XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX570_CR0,0,570,321_.jpg 570w, https://m.media-amazon.com/images/M/MV5BNmJhMDMwMTMtYWU5YS00ODRhLThhMDQtYTYxNGM4YzdhYTI2XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX760_CR0,0,760,428_.jpg 760w" sizes="100vw, (min-width: 480px) 68vw, (min-width: 600px) 52vw, (min-width: 1024px) 32vw, (min-width: 1280px) 32vw" width="380">
+                                <img alt="Production art" class="ipc-image" loading="lazy"
+                                    src="https://m.media-amazon.com/images/M/MV5BNmJhMDMwMTMtYWU5YS00ODRhLThhMDQtYTYxNGM4YzdhYTI2XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg"
+                                    srcset="https://m.media-amazon.com/images/M/MV5BNmJhMDMwMTMtYWU5YS00ODRhLThhMDQtYTYxNGM4YzdhYTI2XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,214_.jpg 380w, https://m.media-amazon.com/images/M/MV5BNmJhMDMwMTMtYWU5YS00ODRhLThhMDQtYTYxNGM4YzdhYTI2XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX570_CR0,0,570,321_.jpg 570w, https://m.media-amazon.com/images/M/MV5BNmJhMDMwMTMtYWU5YS00ODRhLThhMDQtYTYxNGM4YzdhYTI2XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX760_CR0,0,760,428_.jpg 760w"
+                                    sizes="100vw, (min-width: 480px) 68vw, (min-width: 600px) 52vw, (min-width: 1024px) 32vw, (min-width: 1280px) 32vw"
+                                    width="380">
                                 <div class="img__des">
-                                    <button class="btn btn--play" style="width: 28px; height: 28px; font-size: 14px; padding-left: 8px;">
+                                    <button class="btn btn--play"
+                                        style="width: 28px; height: 28px; font-size: 14px; padding-left: 8px;">
                                         <i class="fa-solid fa-play"></i>
                                     </button>
                                     <span>1:01</span>
                                 </div>
                             </div>
-                            <a class="featured__item__title color-white " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_ft_lst_csegmybo_epi_3_t" target="_blank" rel="noopener noreferrer">
+                            <a class="featured__item__title color-white "
+                                href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_ft_lst_csegmybo_epi_3_t"
+                                target="_blank" rel="noopener noreferrer">
                                 The 'Joy Ride' Cast Crack One Another Up
                             </a>
-                            <a class="featured__item__bonus color-blue " href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_c_ft_lst_csegmybo_epi_3_cta" target="_blank" rel="noopener noreferrer">
-                               Watch the video
+                            <a class="featured__item__bonus color-blue "
+                                href="https://www.imdb.com/list/ls520913599/mediaviewer/rm2987865601?ref_=hm_edcft_c_ft_lst_csegmybo_epi_3_cta"
+                                target="_blank" rel="noopener noreferrer">
+                                Watch the video
                             </a>
                         </div>
                     </div>
@@ -993,17 +1053,136 @@
             </section>
         </section>
 
-        </section>
-<section class="container__section explore">
-    <h1 class="title">Explore what's streaming</h1>
-    <section class="container__section--children prime">
-
     </section>
-</section>
+    <section class="container__section explore">
+        <h1 class="title">Explore what's streaming</h1>
+        <section class="container__section--children prime">
+
+        </section>
+    </section>
     <section class="container__section explore-movie">
         <h1 class="title">
             Explore Movies & TV shows
         </h1>
+        <section class="container__section--children top-box ">
+
+            <h2 class="section--children__title">
+                <span class="hr"></span>
+                <span class="title">
+                    Top box office (US)
+                </span>
+                <span class="icon">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </span>
+            </h2>
+            <h4 class="title">
+                Weekend of July 7-9
+            </h4>
+            <div class="flex-row-center top-box__list" style="flex:1">
+                <div class="flex-column-center" style="flex: 1; align-items: flex-start;">
+                    <div class="box-movie flex-row-center">
+                        <span class="box-movie__index item">
+                            1
+                        </span>
+                        <span class="box-movie__bookmark item">
+
+                            <div class="poster__bookmark--add" style="width: 36px; height: 50px;">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </span>
+                        <div class="box-movie__title item">
+                            <span>Quỷ Quyệt: Cửa Đỏ Vô Định</span>
+                            <span style="color: var(--white-second); word-spacing: 2px;">$19M</span>
+                        </div>
+                    </div>
+                    <div class="box-movie flex-row-center">
+                        <span class="box-movie__index item">
+                            2
+                        </span>
+                        <span class="box-movie__bookmark item">
+
+                            <div class="poster__bookmark--add" style="width: 36px; height: 50px;">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </span>
+                        <div class="box-movie__title item">
+                            <span>Indiana Jones và Vòng Quay Định Mệnh</span>
+                            <span style="color: var(--white-second); word-spacing: 2px;">$19M</span>
+                        </div>
+                    </div>
+                    <div class="box-movie flex-row-center">
+                        <span class="box-movie__index item">
+                            3
+                        </span>
+                        <span class="box-movie__bookmark item">
+
+                            <div class="poster__bookmark--add" style="width: 36px; height: 50px;">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </span>
+                        <div class="box-movie__title item">
+                            <span>Sound of Freedom</span>
+                            <span style="color: var(--white-second); word-spacing: 2px;">$19M</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-column-center" style="flex: 1; align-items: flex-start;">
+                    <div class="box-movie flex-row-center">
+                        <span class="box-movie__index item">
+                            4
+                        </span>
+                        <span class="box-movie__bookmark item">
+
+                            <div class="poster__bookmark--add" style="width: 36px; height: 50px;">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </span>
+                        <div class="box-movie__title item">
+                            <span>Xứ Sở Các Nguyên Tố</span>
+                            <span style="color: var(--white-second); word-spacing: 2px;">$19M</span>
+                        </div>
+                    </div>
+                    <div class="box-movie flex-row-center">
+                        <span class="box-movie__index item">
+                            5
+                        </span>
+                        <span class="box-movie__bookmark item">
+
+                            <div class="poster__bookmark--add" style="width: 36px; height: 50px;">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </span>
+                        <div class="box-movie__title item">
+                            <span>Người Nhện: Du Hành Thời Gian Vũ Trụ Nhện</span>
+                            <span style="color: var(--white-second); word-spacing: 2px;">$19M</span>
+                        </div>
+                    </div>
+                    <div class="box-movie flex-row-center">
+                        <span class="box-movie__index item">
+                            6
+                        </span>
+                        <span class="box-movie__bookmark item">
+
+                            <div class="poster__bookmark--add" style="width: 36px; height: 50px;">
+                                <i class="fa-sharp fa-solid fa-bookmark"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </span>
+                        <div class="box-movie__title item">
+                            <span>Joy Ride</span>
+                            <span style="color: var(--white-second); word-spacing: 2px;">$19M</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </section>
     <section class="container__section more-to-explore">
         <h1 class="title">
@@ -1015,23 +1194,204 @@
                     Editor's picks
                 </span>
             </h2>
-           
+
         </section>
-        <section class="container__section--children">
+        <section class="container__section--children born-today">
             <h2 class="section--children__title">
+                <span class="hr"></span>
                 <span class="title">
                     Born today
                 </span>
+                <span class="icon">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </span>
             </h2>
-           
+            <h4 class="title">
+                People born on July 15
+            </h4>
+            <div class="trailer__slider flex-row-center" style="height: fit-content; width: 100%;">
+                <div class="trailer__slider__control flex-row-center">
+                    <button class="btn btn--outlined">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="btn btn--outlined">
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+                </div>
+
+                <div class="born-today__item flex-column-center">
+
+                    <img class="born-today__item__avatar" alt="Lana Parrilla" loading="lazy"
+                        src="https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX140_CR0,4,140,140_.jpg"
+                        srcset="https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX140_CR0,4,140,140_.jpg 140w, https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX210_CR0,5,210,210_.jpg 210w, https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX280_CR0,7,280,280_.jpg 280w"
+                        sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw">
+
+                    <span class="born-today__item__name">
+                        Lana Parrilla
+                    </span>
+                    <span class="born-today__item__old">
+                        46
+                    </span>
+                </div>
+                <div class="born-today__item flex-column-center">
+
+                    <img class="born-today__item__avatar" alt="Lana Parrilla" loading="lazy"
+                        src="https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX140_CR0,4,140,140_.jpg"
+                        srcset="https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX140_CR0,4,140,140_.jpg 140w, https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX210_CR0,5,210,210_.jpg 210w, https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX280_CR0,7,280,280_.jpg 280w"
+                        sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw">
+
+                    <span class="born-today__item__name">
+                        Lana Parrilla
+                    </span>
+                    <span class="born-today__item__old">
+                        46
+                    </span>
+                </div>
+                <div class="born-today__item flex-column-center">
+
+                    <img class="born-today__item__avatar" alt="Lana Parrilla" loading="lazy"
+                        src="https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX140_CR0,4,140,140_.jpg"
+                        srcset="https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX140_CR0,4,140,140_.jpg 140w, https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX210_CR0,5,210,210_.jpg 210w, https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX280_CR0,7,280,280_.jpg 280w"
+                        sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw">
+
+                    <span class="born-today__item__name">
+                        Lana Parrilla
+                    </span>
+                    <span class="born-today__item__old">
+                        46
+                    </span>
+                </div>
+                <div class="born-today__item flex-column-center">
+
+                    <img class="born-today__item__avatar" alt="Lana Parrilla" loading="lazy"
+                        src="https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX140_CR0,4,140,140_.jpg"
+                        srcset="https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX140_CR0,4,140,140_.jpg 140w, https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX210_CR0,5,210,210_.jpg 210w, https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX280_CR0,7,280,280_.jpg 280w"
+                        sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw">
+
+                    <span class="born-today__item__name">
+                        Lana Parrilla
+                    </span>
+                    <span class="born-today__item__old">
+                        46
+                    </span>
+                </div>
+                <div class="born-today__item flex-column-center">
+
+                    <img class="born-today__item__avatar" alt="Lana Parrilla" loading="lazy"
+                        src="https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX140_CR0,4,140,140_.jpg"
+                        srcset="https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX140_CR0,4,140,140_.jpg 140w, https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX210_CR0,5,210,210_.jpg 210w, https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX280_CR0,7,280,280_.jpg 280w"
+                        sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw">
+
+                    <span class="born-today__item__name">
+                        Lana Parrilla
+                    </span>
+                    <span class="born-today__item__old">
+                        46
+                    </span>
+                </div>
+                <div class="born-today__item flex-column-center">
+
+                    <img class="born-today__item__avatar" alt="Lana Parrilla" loading="lazy"
+                        src="https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX140_CR0,4,140,140_.jpg"
+                        srcset="https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX140_CR0,4,140,140_.jpg 140w, https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX210_CR0,5,210,210_.jpg 210w, https://m.media-amazon.com/images/M/MV5BNDdiNDU1Y2YtY2NmMy00NGEyLTljMGEtNjEyODQ1YzgwZTQzXkEyXkFqcGdeQXVyMjIwMjI1MTE@._V1_QL75_UX280_CR0,7,280,280_.jpg 280w"
+                        sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw">
+
+                    <span class="born-today__item__name">
+                        Lana Parrilla
+                    </span>
+                    <span class="born-today__item__old">
+                        46
+                    </span>
+                </div>
+            </div>
         </section>
-        <section class="container__section--children">
+        <section class="container__section--children top-news">
             <h2 class="section--children__title">
+                <span class="hr"></span>
                 <span class="title">
                     Top news
                 </span>
+                <span class="icon">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </span>
             </h2>
-           
+            <div class="trailer__slider" style="width: 100%; height: fit-content;">
+                <div class="trailer__slider__control flex-row-center">
+                    <button class="btn btn--outlined">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="btn btn--outlined">
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+                </div>
+                <div class="top-news__list">
+                    <div class="top-news__item">
+                        <img alt="Mission Impossible 7 Fails To Answer A Massive Fallout Mystery" class="ipc-image"
+                            loading="lazy"
+                            src="https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_QL75_UY133_CR0,0,90,133_.jpg"
+                            srcset="https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_QL75_UY133_CR0,0,90,133_.jpg 90w, https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_QL75_UY200_CR0,0,135,200_.jpg 135w, https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_QL75_UY266_CR1,0,180,266_.jpg 180w"
+                            sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                            width="90">
+                        <div class="top-news__item__des">
+                            <p class="title">
+                                Mission Impossible 7 Fails To Answer A Massive Fallout Mystery
+                            </p>
+                            <div class="">
+                                <span class="date">
+                                    Jul 14
+                                </span>
+                                <span class="web">
+                                    ScreenRant.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-news__item">
+                        <img alt="Mission Impossible 7 Fails To Answer A Massive Fallout Mystery" class="ipc-image"
+                            loading="lazy"
+                            src="https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_QL75_UY133_CR0,0,90,133_.jpg"
+                            srcset="https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_QL75_UY133_CR0,0,90,133_.jpg 90w, https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_QL75_UY200_CR0,0,135,200_.jpg 135w, https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_QL75_UY266_CR1,0,180,266_.jpg 180w"
+                            sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                            width="90">
+                        <div class="top-news__item__des">
+                            <p class="title">
+                                Mission Impossible 7 Fails To Answer A Massive Fallout Mystery
+                            </p>
+                            <div class="">
+                                <span class="date">
+                                    Jul 14
+                                </span>
+                                <span class="web">
+                                    ScreenRant.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>  <div class="top-news__item">
+                        <img alt="Mission Impossible 7 Fails To Answer A Massive Fallout Mystery" class="ipc-image"
+                            loading="lazy"
+                            src="https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_QL75_UY133_CR0,0,90,133_.jpg"
+                            srcset="https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_QL75_UY133_CR0,0,90,133_.jpg 90w, https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_QL75_UY200_CR0,0,135,200_.jpg 135w, https://m.media-amazon.com/images/M/MV5BYzFiZjc1YzctMDY3Zi00NGE5LTlmNWEtN2Q3OWFjYjY1NGM2XkEyXkFqcGdeQXVyMTUyMTUzNjQ0._V1_QL75_UY266_CR1,0,180,266_.jpg 180w"
+                            sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw"
+                            width="90">
+                        <div class="top-news__item__des">
+                            <p class="title">
+                                Mission Impossible 7 Fails To Answer A Massive Fallout Mystery
+                            </p>
+                            <div class="">
+                                <span class="date">
+                                    Jul 14
+                                </span>
+                                <span class="web">
+                                    ScreenRant.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </section>
     <section class="container__section recently">
@@ -1045,4 +1405,5 @@
         đây là footer
     </footer>
 </body>
+
 </html>
