@@ -15,9 +15,8 @@ body {
     width: 100%;
     padding: 6px 10px;
 }
-.container__section, .container__section--children {
-    margin:0;
-    padding: 8px 10px;
+.container__section {
+    padding: 8px 20px;
 }
 
 .trailer {
@@ -63,7 +62,12 @@ body {
 .top10 .infor-more, .top10 .watch-list {
     display: none;
 }
-
+.top10  .watch-now {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: .7rem;
+  }
 .top-box__list {
    
 }

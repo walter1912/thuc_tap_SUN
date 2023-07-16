@@ -1,0 +1,41 @@
+.footer__connection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--white);
+}
+.footer__connection .btn__icon {
+  color: white;
+  margin: 10px 5px;
+}
+.btn--tiktok:hover {
+  color: #964454;
+}
+.btn--facebook:hover {
+  color: #0470e5;
+}
+.btn--youtube:hover {
+  color: #ff3131;
+}
+.btn--instagram:hover {
+  color: #f60a60;
+}
+.btn--twitter:hover {
+  color: #1da1f2;
+}
+
+.footer__tool-menu {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-row-gap: 50px;
+  margin: 40px 180px;
+}
+.footer__tool-menu .btn {
+    font-size: 1.1rem;
+  color: var(--white);
+}
+.footer__tool-menu .btn:hover {
+  text-decoration: underline;
+}

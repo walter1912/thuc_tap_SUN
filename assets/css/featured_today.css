@@ -10,7 +10,7 @@
   background-color: var(--black);
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 10px 4px;
   align-items: flex-start;
 }
 .featured__item a {
