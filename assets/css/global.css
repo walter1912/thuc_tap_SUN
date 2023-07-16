@@ -69,6 +69,8 @@ a {
 .section__title {
   font-size: 36px;
   color:var(--color-main);
+}
+.section__title::first-letter {
   text-transform:capitalize;
 }
 /* button */

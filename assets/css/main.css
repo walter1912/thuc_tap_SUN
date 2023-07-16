@@ -43,8 +43,11 @@ body {
 
 }
 .section--children__title .title {
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     padding-left: 8px;
+}
+.section--children__title .title::first-letter {
+    text-transform: uppercase;
 }
 .section--children__title .hr {
     border: 2px solid var(--color-main);
