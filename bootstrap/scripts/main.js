@@ -62,7 +62,7 @@ let mixer = mixitup(containerEl);
 // -----------nav button--------------//
 let nav = document.getElementById("select-nav");
 function clickF() {
-	if (nav.className === "linksnav-pills links-secondary") {
+	if (nav.className === "links nav-pills links-secondary") {
 		nav.className += " links nav-pills links-secondary links-secondary-res";
 	} else {
 		nav.className = "links nav-pills links-secondary";
