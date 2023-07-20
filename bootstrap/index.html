@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Hồ Thái - Personal Portfolio</title>
+	<link rel="shortcut icon" href="assets/images/faviconIcon.png" type="image/x-icon" />
+	<!-- fontAwesome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/vendors/bootstrap.min.css" />
+	<!-- Page-loader -->
+	<link rel="stylesheet" href="assets/vendors/pageLoader.css" />
+	<!-- custom stylesheet -->
+	<link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body id="mainBase">
+	<!-------------Page loader----------->
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+	</div>
+	<!-------------Back to Top----------->
+	<a href="#home" class="d-none">
+		<span class="bottom-to-top" title="Back to Top">
+			<i class="fas fa-chevron-up"></i>
+		</span>
+	</a>
+	<!--------- color-change ------------>
+	<div id="colors">
+		<div class="icon">
+			<button onclick="colorSwitch();"><i class="fas fa-cog"></i></button>
+		</div>
+		<div class="other-colors">
+			<h4>Choose Color</h4>
+			<div class="four-color">
+				<span data-color="red" id="red"></span>
+				<span data-color="pink" id="pink"></span>
+				<span data-color="blue" id="blue"></span>
+				<span data-color="cyan" id="cyan"></span>
+			</div>
+			<div class="four-color">
+				<span data-color="purple" id="purple"></span>
+				<span data-color="green" id="green"></span>
+				<span data-color="lightGreen" id="lightGreen"></span>
+				<span data-color="yellow" id="yellow"></span>
+			</div>
+			<div title="Mode" id="toggler">
+				<input id="toggle" type="checkbox" checked />
+			</div>
+			<div id="default" class="default">Default Color</div>
+		</div>
+	</div>
+	<!---------- Nav section ------------>
+	<nav id="spy" class="main-nav">
+		<div class="aside-content">
+			<div class="profile dark-theme">
+				<div class="image">
+					<img class="rounded-circle" src="assets/images/profile.jpg" alt="Profile-picture" />
+				</div>
+				<div class="name">Hồ Thái</div>
+			</div>
+			<div class="links nav-pills">
+				<a class="nav-link u-link newColor" href="#home"><span><i class="fas fa-house-user"></i></span>Home</a>
+				<a class="nav-link u-link" href="#aboutme"><span><i class="fas fa-user"></i></span>About Me</a>
+				<a class="nav-link u-link" href="#services"><span><i class="fas fa-cog"></i></span>Services</a>
+				<a class="nav-link u-link" href="#summary"><span><i class="fas fa-id-badge"></i></span>CV</a>
+				<a class="nav-link u-link" href="#portfolio"><span><i class="fas fa-briefcase"></i></span>Portfolio</a>
+
+				<a class="nav-link u-link" href="#contact"><span><i class="fas fa-address-book"></i></span>Contact</a>
+			</div>
+			<div class="social-media">
+				<a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="facebook"><i
+						class="fab fa-facebook"></i></a>
+				<a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="twitter"><i
+						class="fab fa-twitter"></i></a>
+				<a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="whatsapp"><i
+						class="fab fa-whatsapp"></i></a>
+				<a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="github"><i
+						class="fab fa-github"></i></a>
+			</div>
+		</div>
+	</nav>
+	<!-- mobile-nav start -->
+	<nav class="secondary-nav">
+		<div class="nav-header">
+			<div class="small-img">
+				<a href="#aboutme">
+					<img src="assets/images/profile.jpg" class="rounded-circle" width="40px" alt="profile" />
+				</a>
+				<h3><span id="first-part-name">Hồ </span>Thái</h3>
+			</div>
+			<div class="profile-section">
+				<div class="social-media-mo">
+					<a id="facebook-link-nav" href="#"><span><i data-bs-toggle="tooltip" data-bs-placement="bottom"
+								title="facebook" class="fab fa-facebook"></i></span></a>
+					<a id="twitter-link-nav" href="#"><span><i data-bs-toggle="tooltip" data-bs-placement="bottom"
+								title="twitter" class="fab fa-twitter"></i></span></a>
+					<a href="#"><span><i data-bs-toggle="tooltip" data-bs-placement="bottom" title="github"
+								class="fab fa-github"></i></span></a>
+				</div>
+				<div class="navBtn" id="nav-expand" onclick="clickF();crossing(this);">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="nav-all-links">
+		<div id="select-nav" class="links nav-pills links-secondary">
+			<a class="nav-link u-link" href="#home"><span><i class="fas fa-house-user" title="Home"></i></span><span
+					class="dh-H">Home</span></a>
+			<a class="nav-link u-link" href="#aboutme"><span><i class="fas fa-user" title="About Me"></i></span><span
+					class="dh-H">About Me</span></a>
+			<a class="nav-link u-link" href="#services"><span><i class="fas fa-cog" title="Services"></i></span><span
+					class="dh-H">Services</span></a>
+			<a class="nav-link u-link" href="#summary"><span><i class="fas fa-id-badge" title="Summary"></i></span><span
+					class="dh-H">Summary</span></a>
+			<a class="nav-link u-link" href="#portfolio"><span><i class="fas fa-briefcase"
+						title="Portfolio"></i></span><span class="dh-H">Portfolio</span></a>
+
+
+			<a class="nav-link u-link" href="#contact"><span><i class="fas fa-address-book"
+						title="Contact"></i></span><span class="dh-H">Contact</span></a>
+		</div>
+	</div>
+	<!-- mobile-nav stop --->
+	<!------------- main section ------------->
+	<main>
+		<section id="home" class="section-part">
+			<div class="container-fluid transparent-bg">
+				<div class="row">
+					<div class="col-12">
+						<div class="details">
+							<div class="wlc-note">
+								<span id="pin">Welcome</span>
+							</div>
+							<div class="type">
+								<h2 class="typed_js"></h2>
+							</div>
+							<div class="location">
+								<span class="main-loc">Mỗ Lao
+									<span class="full-loc">Hà Đông</span>
+									<span class="short-loc">Hà Nội</span>
+								</span>
+							</div>
+							<div class="hire-btn">
+								<a href="#contact"><button>Hire Me</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!----------- About me ---------->
+		<section id="aboutme" class="sectionL section-part">
+			<div class="container-fluid">
+				<div class="row padding">
+					<div class="col-12">
+						<div class="heading">
+							<h2>ABOUT <span class="me">ME</span></h2>
+							<p>
+								Know Me <span class="extra">More</span><span class="underline"></span>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-8 col-12">
+						<div class="short-des">
+							<h2>
+								I'm <span class="myName">Hồ Thái</span>, a Web
+								Developer.
+							</h2>
+							<p>
+								Tôi đang trong quá trình tìm hiểu để trở thành 1 lập trình viên Frontend.
+							</p>
+							
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="basic-info">
+							<ul>
+								<li><span>Name:</span> Hồ Bá Thái</li>
+								<li>
+									<span>Email:</span>
+									<a href="mailto:hobathai1912work@gmail.com" target="_blank"
+										class="email">hobathai1912work@gmail.com</a>
+								</li>
+								<li><span>Age:</span> 22</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<!-------------- services -------------->
+		<section id="services" class="sectionD section-part">
+			<div class="container-fluid">
+				<div class="row padding">
+					<div class="col-12">
+						<div class="heading">
+							<h2>SERVICES</h2>
+							<p>What I Learn<span class="underline"></span></p>
+						</div>
+					</div>
+					<div class="col-md-6 col-12">
+						<div class="service-side-1">
+							<div class="service-div">
+								<div class="service-icon">
+									<span>
+										<i class="fab fa-js"></i>
+									</span>
+								</div>
+								<div class="service-details">
+									<h2>javaScript</h2>
+									<p>
+										Tôi đã tìm hiểu vềJavaScript ở trang w3school, F8, ....
+										Tôi nghĩ tôi hiểu JavaScript mới ở múc cơ bản.
+									</p>
+								</div>
+							</div>
+							<div class="service-div">
+								<div class="service-icon">
+									<span>
+										<i class="fas fa-pencil-ruler"></i>
+									</span>
+								</div>
+								<div class="service-details">
+									<h2>Java</h2>
+									<p>
+										Tôi đã học trên trường môn Hướng đối tượng bằng Java.
+									</p>
+								</div>
+							</div>
+							<div class="service-div">
+								<div class="service-icon">
+									<span>
+										<i class="fas fa-drafting-compass"></i>
+									</span>
+								</div>
+								<div class="service-details">
+									<h2>Mobile</h2>
+									<p>
+										Tôi được học trên trường môn Lập trình ứng dụng di động bằng ngôn ngữ Java.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-12">
+						<div class="service-side-2">
+							<div class="service-div">
+								<div class="service-icon">
+									<span>
+										<i class="fas fa-bullhorn"></i>
+									</span>
+								</div>
+								<div class="service-details">
+									<h2>Python</h2>
+									<p>
+										Tôi đã tìm hiểu về python ở trang w3school.
+										Lý thuyết về xử lý ảnh bằng openCV,
+										Xử lý dữ liệu bằng Pandas, Numpy.
+										Đọc qua lý thuyết về Machine Learning, Deep Learning,
+										thuật toán của ML: KNN.
+									</p>
+								</div>
+							</div>
+							<div class="service-div">
+								<div class="service-icon">
+									<span>
+										<i class="fas fa-palette"></i>
+									</span>
+								</div>
+								<div class="service-details">
+									<h2>ReactJS</h2>
+									<p>
+										Các thư viện: 
+									</p>
+										 <ul>
+											<li>react-router-dom</li>
+											<li>formik, yup</li>
+											<li>axios</li>
+											<li>redux-toolkit</li>
+											<li>material-ui</li>
+											<li>...</li>
+										 </ul>
+								
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!----------- Resume ------------>
+		<section id="summary" class="sectionL section-part">
+			<div class="container-fluid">
+				<div class="row padding">
+					<div class="col-12">
+						<div class="heading">
+							<h2>SUMMARY</h2>
+							<p>Resume<span class="underline"></span></p>
+						</div>
+					</div>
+					<div class="col-md-6 col-12">
+						<div class="educationEx">
+							<h2>My Education</h2>
+							<div class="eduEx-section">
+								<div class="year">
+									<span>2019 - 2024</span>
+								</div>
+								<div class="subject">Student</div>
+								<div class="institute">Học viện Công nghệ Bưu chính Viễn thông Hà Nội</div>
+								<div class="description">
+									Tôi học chuyên ngành Công nghệ phần mềm
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-md-6 col-12">
+						<div class="educationEx exparience">
+							<h2>My Experience</h2>
+							<div class="eduEx-section">
+								<div class="year">
+									<span>03/2023 - 05/2023</span>
+								</div>
+								<div class="subject">Thực tập sinh Frontend (ReactJS)</div>
+								<div class="institute">G-connect</div>
+								<div class="description">
+									<ul>
+										<li>Tìm hiểu về HTML, CSS.</li>
+										<li>Tìm hiểu về ReactJS</li>
+										<li>Tìm hiểu về .Net</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</section>
+		<!------------- Portfolio --------------->
+		<section id="portfolio" class="sectionD section-part">
+			<div class="container-fluid">
+				<div class="row padding">
+					<div class="col-12">
+						<div class="heading">
+							<h2>PORTFOLIO</h2>
+							<h2 style="color: var(--sectionD-heading)">PROJECT</h2>
+							<p>My Projects<span class="underline"></span></p>
+						</div>
+					</div>
+					<div class="col-12 p-0">
+						<!----------- mix it up --------->
+						<div class="controls">
+							<button type="button" class="control" data-filter="all">All</button>
+							<button type="button" class="control" data-filter=".brand">
+								Brand
+							</button>
+							<button type="button" class="control" data-filter=".best">
+								Best
+							</button>
+							<button type="button" class="control" data-filter=".popular">
+								Popular
+							</button>
+						</div>
+						<div class="mixitup-container">
+							<div class="row">
+									<div class="mix brand best col-md-4 col-6">
+										<img class="image" src="assets/images/1.png" alt="mixitup" />
+										<div class="project-details">
+											<h3>Create Object Key Result </h3>
+											<a href="https://github.com/walter1912/OKRS_TEAM_1/tree/feature/frontend-okr" target="_blank" rel="noopener noreferrer">
+												Details
+											</a>
+										</div>
+									</div>
+									<div class="mix popular col-md-4 col-6">
+										<img class="image" src="assets/images/4.png" alt="mixitup" />
+										<div class="project-details">
+											<h3>API quản lý sinh viên</h3>
+											<a href="https://github.com/walter1912/API_Quan_ly_sinh_vien" target="_blank" rel="noopener noreferrer">
+												Details
+											</a>
+										</div>
+									</div>
+									<div class="mix best col-md-4 col-6">
+										<img class="image" src="assets/images/3.jpg" alt="mixitup" />
+										<div class="project-details">
+											<h3>FE quản lý sinh viên</h3>
+											<a href="https://github.com/walter1912/Quan_ly_sinh_vien" target="_blank" rel="noopener noreferrer">
+												Details
+											</a>
+										</div>
+									</div>
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!--------------- Contact -------------->
+		<section id="contact" class="sectionL section-part">
+			<div class="container-fluid">
+				<div class="row padding">
+					<div class="col-12">
+						<div class="heading">
+							<h2>Contact</h2>
+							<p>Get in Touch<span class="underline"></span></p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="contact-container">
+							<h3>Address</h3>
+							<div class="address">
+								Mỗ Lao, Hà Đông, Hà Nội
+							</div>
+							<div class="contact-info">
+								<div class="phone">
+									<span><i class="fas fa-phone"></i></span>
+									<span>0377241628</span>
+								</div>
+								<div class="mail">
+									<span><i class="fas fa-envelope"></i></span>
+									<span>hobathai1912work@gmail.com</span>
+								</div>
+							</div>
+							<div class="follow-me">
+								<h3>Follow me</h3>
+								<div class="social-media-2">
+									<a href="javaScript:void(0)">
+										<i class="fab fa-facebook" data-bs-toggle="tooltip" data-bs-placement="top"
+											title="facebook"></i>
+									</a>
+									<a href="javaScript:void(0)">
+										<i class="fab fa-whatsapp" data-bs-toggle="tooltip" data-bs-placement="top"
+											title="whatsapp"></i>
+									</a>
+									<a href="javaScript:void(0)">
+										<i class="fab fa-twitter" data-bs-toggle="tooltip" data-bs-placement="top"
+											title="twitter"></i>
+									</a>
+									<a href="javaScript:void(0)">
+										<i class="fab fa-instagram" data-bs-toggle="tooltip" data-bs-placement="top"
+											title="instagram"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8 col-12">
+						<div class="messages-box">
+							<h3>Describe Your Needs</h3>
+							<form class="row" action="https://formspree.io/f/xknepvdb" method="post">
+								<div class="col-md-6 col-12">
+									<input type="text" id="textBox" name="Name" placeholder="Name" required />
+								</div>
+								<div class="col-md-6 col-12">
+									<input type="email" name="Email" id="email" placeholder="Email" required />
+								</div>
+								<div class="col-12">
+									<textarea name="Message" id="msg" rows="5"
+										placeholder="Write in details about your needs...." required></textarea>
+								</div>
+								<div class="col-12 adjustment">
+									<button type="submit">
+										Send Message <i class="fas fa-paper-plane ms-1"></i>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- -------------footer------------- -->
+		<footer class="sectionD container-fluid padding">
+			<div class="row">
+				<div class="col-md-6 col-12 main-footer-text">
+					<span>
+						Copyright © 
+						<a class="footer-name" href="https://github.com/walter1912">Walter</a>.
+					</span>
+					All Rights Reserved.
+				</div>
+				<div class="col-md-6 col-12 text-end">
+					<a href="#" title="Terms & Policy">Terms & Policy </a>
+					<span>|</span>
+					<a href="#" title="Disclaimer">Disclaimer</a>
+				</div>
+			</div>
+		</footer>
+	</main>
+
+	<!-- jQuery -->
+	<script src="assets/vendors/jquery-3.6.0.js"></script>
+	<!-- bootstrap bundle -->
+	<script src="assets/vendors/bootstrap.bundle.min.js"></script>
+	<!-- Count-js -->
+	<script src="assets/vendors/numscroller-1.0.js"></script>
+	<!-- typed js -->
+	<script src="assets/vendors/typed@2.0.12.js"></script>
+	<!-- mix it up -->
+	<script src="assets/vendors/mixitup.min.js"></script>
+	<!-- color-switcher js -->
+	<script src="./scripts/mode.js"></script>
+	<script src="./scripts/palette.js"></script>
+	<script src="assets/vendors/color-switcher.js"></script>
+	<!-- custom js -->
+	<script src="./scripts/main.js"></script>
+</body>
+
+</html>
